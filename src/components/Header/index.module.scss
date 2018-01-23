@@ -1,0 +1,63 @@
+@import '../../styles/_variables.scss';
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(80px, auto);
+  align-items: center;
+  grid-gap: 50px;
+  background: rgba(255,255,255,0.5);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  box-shadow: 1px 1px 3px #999;
+}
+
+.title {
+  margin: {
+    top: 1rem;
+    left: 3rem;
+  }
+}
+
+.title__link {
+  color: $title-font-color;
+  text-decoration: none;
+}
+
+.byline {
+  position: relative;
+  margin: {
+    left: 3.2rem;
+    top: 0.5rem;
+  }
+  font: {
+    size: 1.4rem;
+    weight: 100;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  grid-gap: 20px;
+}
+
+.menu__item {
+  font: {
+    size: 1.8rem;
+    weight: 100;
+  }
+  text-decoration: none;
+  color: $menu-font-color;
+}
+
+.menu__item:hover {
+  border-bottom: 2px solid gold;
+}
+
+.menu__item:last-child {
+  margin-right: 2rem;
+}
