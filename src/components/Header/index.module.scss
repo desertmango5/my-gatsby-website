@@ -52,6 +52,10 @@
   }
   text-decoration: none;
   color: $menu-font-color;
+  padding: {
+    bottom: 0.25rem;
+  }
+  border-bottom: 2px solid rgba(255,255,255,0);
 }
 
 .menu__item:hover {

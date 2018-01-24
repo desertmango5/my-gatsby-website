@@ -1,6 +1,7 @@
 @import './_variables.scss';
 
 .body {
+  max-width: $max-width;
   padding: $page-padding;
   margin: $page-margin;
 }
