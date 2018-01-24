@@ -1,0 +1,11 @@
+@import './_variables.scss';
+
+.body {
+  max-width: $max-width;
+  margin: $page-margin;
+  padding: $page-padding;
+}
+
+p {
+  font-size: 3rem;
+}
