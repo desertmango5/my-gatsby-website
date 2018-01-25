@@ -4,5 +4,73 @@
   max-width: $max-width;
   margin: $page-margin;
   padding: $page-padding;
+  display: grid;
+  justify-content: center;
 }
 
+.post {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  margin-bottom: 6rem;
+}
+
+.date {
+  font: {
+    size: 1.3rem;
+  }
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $heading-font-color;
+  font-size: 3.5rem;
+}
+
+.authorSection {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0 3rem 1rem;
+}
+
+.author {
+  font: {
+    size: 1.2rem;
+  }
+}
+
+.name {
+  font: {
+    size: 1.5rem;
+  }
+}
+
+.authorImage {
+  width: 32px;
+  margin-left: 1rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #777;
+}
+
+.coverImage {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.content {
+  max-width: 900px;
+  grid-column: 1 / -1;
+  margin: 3rem auto 6rem auto;
+}
+
+  

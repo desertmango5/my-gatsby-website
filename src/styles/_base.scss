@@ -29,23 +29,77 @@ h1 {
     size: 3rem;
     weight: 400;
   }
+  color: $standard-font-color;
 }
 
 h2 {
   font: {
     size: 2.5rem;
   }
+  color: $standard-font-color;
 }
 
 h3 {
   font: {
     size: 2.25rem;
   }
+  margin: 3.5rem 0 2rem 0;
+  color: $heading-font-color;
 }
 
 p {
   font: {
-    size: 1.6rem;
+    size: 1.8rem;
     weight: 100;
   }
+  margin: 1.4rem 0;
+  line-height: 2.4rem;
+  color: $menu-font-color;
+}
+
+pre {
+  white-space: pre;
+  margin: 2rem 1rem;
+}
+
+code {
+  font: {
+    size: 1.5rem;
+    weight: 400;
+    family: 'Courier New', Monospace;
+  }
+  letter-spacing: 0.03rem;
+  line-height: 1.8rem;
+  background: rgba(255,255,255,0.5);
+  padding: 0.2rem 0.75rem;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 1px 1px 3px #999;
+}
+
+code.language-block {
+  display: block;
+  padding: 2rem;
+  overflow-x: scroll;
+  width: auto;
+}
+
+li {
+  font: {
+    size: 1.8rem;
+    weight: 100;
+  }
+  margin: 1.4rem 0;
+  line-height: 2.4rem;
+  color: $menu-font-color;
+  list-style: disc;
+  margin-left: 4rem;
+}
+
+li:first-child {
+  margin-top: 3rem;
+}
+
+li:last-child {
+  margin-bottom: 3rem;
 }
