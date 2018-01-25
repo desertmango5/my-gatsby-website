@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames/bind'
 import style from './index.module.scss'
+import logo from '../../../static/logo/website-logo.png'
 
 class Header extends React.Component{
   constructor() {
@@ -81,15 +82,13 @@ class Header extends React.Component{
     return (
       <div className={style.navigation}>
         <div>
-          <h1 className={style.title}>
-            <Link 
-              to="/" 
-              className={style.title__link}
-              onClick={this.click}
-              >
-                {this.props.title}
-              </Link>
-          </h1>
+          <Link 
+            to="/" 
+            className={style.title__link}
+            onClick={this.click}
+            >
+              <img src={logo} alt="Michael Manges logo" className={style.title} />
+            </Link>
           <h4 className={style.byline}>{this.props.byline}</h4>
         </div>
         <div className={style.menu}>

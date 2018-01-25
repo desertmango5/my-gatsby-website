@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import '../styles/styles.scss'
+import icon32 from '../../static/logo/32-website-favicon.png'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
@@ -12,6 +13,9 @@ const TemplateWrapper = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Web developer and photographer Michael Manges' },
         { name: 'keywords', content: 'webdev, photography, gatsbyjs, reactjs, frontend, graphql, design, photo, photos' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${icon32}` } 
       ]}
     />
     <Header 
