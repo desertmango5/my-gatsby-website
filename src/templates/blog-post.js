@@ -1,7 +1,7 @@
 import React from 'react' 
 import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
-import style from '../styles/blog.module.scss'
+import style from '../styles/blog-post.module.scss'
 
 const Blog = ({ data }) => (
   <div>
@@ -25,25 +25,22 @@ const Blog = ({ data }) => (
               className={style.coverImage}  
             />
             <Markdown
-              source={post.node.excerpt}
-              className={style.excerpt}
+              source={post.node.content}
+              className={style.content}
             />
-            <Link to="/" className={style.buttonLink}>
-              <button className={style.button}>Read More <span className={style.arrow}>→</span></button>
-            </Link>
           </div>
         </div>
       ))}
-      <hr/>
     </div>
+    <hr/>
   </div>
   
 )
 
 export default Blog
 
-export const allPostsQuery = graphql`
-  query allPosts {
+export const PostQuery = graphql`
+  query Posts {
     allPosts(sort: {fields: [date], order: DESC}) {
       edges {
         node {
@@ -53,7 +50,7 @@ export const allPostsQuery = graphql`
           date(formatString: "DD MMM YYYY")
           tags
           category
-          excerpt
+          content
           coverImage {
             id
             url

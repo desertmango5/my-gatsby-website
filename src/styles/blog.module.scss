@@ -5,16 +5,21 @@
   margin: $page-margin;
   padding: $page-padding;
   display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
 }
 
 .post {
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(300px, 1fr);
-  margin-bottom: 6rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  margin-bottom: 12rem;
 }
 
 .date {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
   font: {
     size: 1.3rem;
   }
@@ -22,7 +27,10 @@
 }
 
 .link {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
   text-decoration: none;
+  line-height: 4rem;
 }
 
 .link:hover {
@@ -37,9 +45,11 @@
 }
 
 .authorSection {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
   display: flex;
   align-items: center;
-  margin: 0.75rem 0 3rem 1rem;
+  margin: 0.75rem 0 0 1rem;
 }
 
 .author {
@@ -54,23 +64,81 @@
   }
 }
 
+
 .authorImage {
   width: 32px;
   margin-left: 1rem;
   border-radius: 3px;
   box-shadow: 1px 1px 3px #777;
 }
+            
+.main {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.excerpt {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+
+
+.button {
+  grid-column: 1 / span 1;
+  width: 120px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 1px 1px 4px #777;
+  background: rgba(0,0,0,0);
+  font-size: 1.3rem;
+  margin: {
+    top: 1rem;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgba(255,255,255,0.3);
+}
 
 .coverImage {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
   width: 100%;
   border-radius: 5px;
   box-shadow: 1px 1px 5px #777;
 }
-
-.content {
-  max-width: 900px;
-  grid-column: 1 / -1;
-  margin: 3rem auto 6rem auto;
-}
-
   
+
+/*** MEDIA QUERIES ***/
+
+@media (max-width: 800px) {
+  .main {
+    grid-auto-rows: auto;
+  }
+
+  .coverImage {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    order: 1;
+    margin-top: 1rem;
+  }
+
+  .excerpt {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    order: 2;
+    margin: {
+      top: 2rem;
+    }
+  }
+
+  .button {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}

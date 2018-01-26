@@ -34,6 +34,7 @@ module.exports = {
             title
             date
             slug
+            excerpt
             content
             category
             tags
