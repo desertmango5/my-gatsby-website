@@ -1,7 +1,82 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
+const slash = require('slash');
+const {
+  createPaginationPages,
+  createLinkedPages
+} = require('gatsby-pagination');
 
- // You can delete this file if you're not using it
+exports.createPages = ({ graphql, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+  return new Promise((resolve, reject) => {
+    const postTemplate = path.resolve(`src/templates/blog-post.js`)
+    const indexTemplate = path.resolve(`src/templates/index.js`)
+
+    graphql(`
+      {
+        allPosts (
+          limit: 1000
+        ) {
+          edges {
+            node {
+              id
+              title
+              date
+              slug
+              excerpt
+              content
+              category
+              tags
+              coverImage {
+                id
+                handle
+                height
+                width
+                url
+              }
+              authors {
+                id
+                bio
+                name
+                image {
+                  id
+                  url
+                  handle
+                }
+                posts {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+        if(result.errors) {
+          console.log(result.errors, 'hello')
+        }
+
+        createPaginationPages({
+          createPage,
+          edges: result.data.allPosts.edges,
+          component: slash(indexTemplate),
+          limit: 10
+        })
+
+        // create page for each blog post when title is clicked
+        createLinkedPages({
+          createPage,
+          edges: result.data.allPosts.edges,
+          component: slash(postTemplate),
+          edgeParser: edge => ({
+            path: `/blog/${edge.node.slug}`,
+            context: {
+              slug: edge.node.slug,
+            },
+          }),
+          circular: true,
+        })
+      resolve()
+    })
+  })
+}

@@ -9,7 +9,7 @@ const Blog = ({ data }) => (
       {data.allPosts.edges.map(post => (
         <div key={post.node.id} className={style.post}>
           <p className={style.date}>{post.node.date}</p>
-          <Link to="/" className={style.link}>
+          <Link to={post.node.slug} className={style.link}>
             <h2 className={style.title}>{post.node.title}</h2>
           </Link>
           {post.node.authors.map(author => (
@@ -34,7 +34,6 @@ const Blog = ({ data }) => (
           </div>
         </div>
       ))}
-      <hr/>
     </div>
   </div>
   
