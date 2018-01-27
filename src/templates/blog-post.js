@@ -3,9 +3,13 @@ import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
 import style from '../styles/blog-post.module.scss'
 
-class Blog extends React.Component {
+class BlogPost extends React.Component {
   render() {
     const post = this.props.data.posts
+    const { next, prev } = this.props.pathContext
+    console.log(next)
+    console.log(prev)
+
     return (
       <div>
         <div className={style.body}>
@@ -31,6 +35,11 @@ class Blog extends React.Component {
                 className={style.content}
               />
             </div>
+            <Link
+              to={this.props.pathContext.next}
+            >
+              Next Post
+            </Link>
           </div>
         </div>
       </div>
@@ -38,7 +47,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default BlogPost
 
 export const postQuery = graphql`
   query readEachBlogPost(

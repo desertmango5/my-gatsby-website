@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve(`src/templates/blog-post.js`)
-    const indexTemplate = path.resolve(`src/templates/index.js`)
+    const blogTemplate = path.resolve(`src/templates/blog.js`)
 
     graphql(`
       {
@@ -59,7 +59,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPaginationPages({
           createPage,
           edges: result.data.allPosts.edges,
-          component: slash(indexTemplate),
+          component: slash(blogTemplate),
+          pathFormatter: path => `/blog/`,
           limit: 10
         })
 
@@ -69,7 +70,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.allPosts.edges,
           component: slash(postTemplate),
           edgeParser: edge => ({
-            path: `/blog/${edge.node.slug}`,
+            path: edge.node.slug,
             context: {
               slug: edge.node.slug,
             },

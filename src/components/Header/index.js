@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { NavLink } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import style from './index.module.scss'
 import logo from '../../../static/logo/website-logo.png'
@@ -8,111 +9,44 @@ class Header extends React.Component{
   constructor() {
     super();
     // bind functions to this
-    this.click = this.click.bind(this)
-    this.clickAbout = this.clickAbout.bind(this)
-    this.clickBlog = this.clickBlog.bind(this)
-    this.clickPhotography = this.clickPhotography.bind(this)
-
-    // states
-    this.state = { 
-      blogActive: false,
-      aboutActive: false,
-      photographyActive: false
-     }
-  }
-
-  // functions
-  clickAbout() {
-    this.setState({ 
-      blogActive: false,
-      aboutActive: true,
-      photographyActive: false
-    })
-  }
-
-  clickBlog() {
-    this.setState({ 
-      blogActive: true,
-      aboutActive: false,
-      photographyActive: false
-    })
-  }
-
-  clickPhotography() {
-    this.setState({ 
-      blogActive: false,
-      aboutActive: false,
-      photographyActive: true
-    })
-  }
-
-  click() {
-    this.setState({
-      blogActive: false,
-      aboutActive: false,
-      photographyActive: false
-    })
+    
   }
 
   render() {
-    // bind style to 
-    let cx = classNames.bind(style)
-
-    const setClassesAbout = cx(
-      {
-        menu__item: true,
-        menu__active: this.state.aboutActive,
-      }
-    )
-
-    const setClassesBlog = cx(
-      {
-        menu__item: true,
-        menu__active: this.state.blogActive,
-      }
-    )
-
-    const setClassesPhotography = cx(
-      {
-        menu__item: true,
-        menu__active: this.state.photographyActive,
-      }
-    )
-
+    
     return (
       <div className={style.navigation}>
         <div>
           <Link 
             to="/" 
             className={style.title__link}
-            onClick={this.click}
             >
               <img src={logo} alt="Michael Manges logo" className={style.title} />
             </Link>
           <h4 className={style.byline}>{this.props.byline}</h4>
         </div>
         <div className={style.menu}>
-          <Link 
+          <NavLink 
             to="/blog/" 
-            className={setClassesBlog}
-            onClick={this.clickBlog}
+            className={style.menu__item}
+            activeClassName={style.menu__active}
             >
               Blog
-            </Link>
-          <Link 
+            </NavLink>
+          <NavLink 
             to="/about/" 
-            className={setClassesAbout}
-            onClick={this.clickAbout}
+            className={style.menu__item}
+            activeClassName={style.menu__active}
           >
             About
-          </Link>
-          <Link 
+          </NavLink>
+          <NavLink 
             to="/photography/" 
-            className={setClassesPhotography}
-            onClick={this.clickPhotography}
+            className={style.menu__item}
+            activeClassName={style.menu__active}
           >
             Photography
-          </Link>
+          </NavLink>
         </div>
       </div>
     )
