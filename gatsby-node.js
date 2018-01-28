@@ -2,7 +2,8 @@ const path = require('path');
 const slash = require('slash');
 const {
   createPaginationPages,
-  createLinkedPages
+  createLinkedPages,
+  prefixPathFormatter
 } = require('gatsby-pagination');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
@@ -53,14 +54,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
         if(result.errors) {
-          console.log(result.errors, 'hello')
+          console.log(result.errors)
         }
 
+        // create blog.js page that passes pathContext props to blog-post.js
         createPaginationPages({
           createPage,
           edges: result.data.allPosts.edges,
           component: slash(blogTemplate),
-          pathFormatter: path => `/blog/`,
+          pathFormatter: prefixPathFormatter("/blog"),
           limit: 10
         })
 
@@ -70,7 +72,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.allPosts.edges,
           component: slash(postTemplate),
           edgeParser: edge => ({
-            path: edge.node.slug,
+            path: `/blog/${edge.node.slug}`,
             context: {
               slug: edge.node.slug,
             },
