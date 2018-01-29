@@ -11,7 +11,7 @@ html {
   }
   text-shadow: 0 0 1px #aaa;
   color: $standard-font-color;
-  background-image: url('../../static/images/bg.jpg');
+  background-image: url('../assets/images/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -34,16 +34,16 @@ h1 {
 
 h2 {
   font: {
-    size: 2.5rem;
+    size: 2.75rem;
   }
   color: $standard-font-color;
 }
 
 h3 {
   font: {
-    size: 2.25rem;
+    size: 2.5rem;
   }
-  margin: 4rem 0 2rem 0;
+  margin: 6rem 0 2rem 0;
   color: $heading-font-color;
 }
 

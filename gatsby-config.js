@@ -25,6 +25,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-svgr`,
+      options: {
+        dir: `./src/assets/svg`,
+        icon: true,
+        viewBox: false,
+      },
+    },
+    {
       resolve: `gatsby-source-graphcms`,
       options: {
         endpoint: process.env.GATSBY_BLOG_ENDPOINT,

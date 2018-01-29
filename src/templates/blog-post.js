@@ -9,18 +9,22 @@ class BlogPost extends React.Component {
     const post = this.props.data.posts
     const { next, prev } = this.props.pathContext
 
+    const createTitle = (slug) => {
+      let noBlog = slug.slice(6, next.length)
+      let title = noBlog.replace(/-/g, ' ')
+      return title
+    }
+
+    const nextTitle = createTitle(next)
+    const prevTitle = createTitle(prev)
+    
     return (
       <div>
         <div className={style.body}>
           <div key={post.id} className={style.post}>
             <p className={style.date}>{post.date}</p>
             <h2 className={style.title}>{post.title}</h2>
-            {post.authors.map(author => (
-              <div key={author.id} className={style.authorSection}>
-                <p className={style.author}>Posted by <span className={style.name}>{author.name}</span></p>
-                <img src={author.image.url} alt={author.name} className={style.authorImage} />
-              </div>
-            ))}
+            
             <div className={style.main}>
               <img 
                 src={post.coverImage.url} 
@@ -31,17 +35,31 @@ class BlogPost extends React.Component {
                 source={post.content}
                 className={style.content}
               />
+              {post.authors.map(author => (
+                <div key={author.id} className={style.authorSection}>
+                  <p className={style.author}>Posted by <span className={style.name}>{author.name}</span></p>
+                  <img src={author.image.url} alt={author.name} className={style.authorImage} />
+                </div>
+              ))}
+              <hr className={style.divider}/>
               <h5>Tags</h5>
               <div className={style.tags}>
                 {post.tags.map(tag => (
                   <button key={shortid.generate()} className={style.tags__button}>{tag}</button>
                 ))}
               </div>
-              <hr/>
             </div>
             <div className={style.postNav}>
-              <Link to={prev} className={style.postNav__item}>← Previous</Link>
-              <Link to={next} className={style.postNav__item}>Next →</Link>
+              <div className={style.postNav__prev}>
+                <p className={style.prev}>← Previous Post</p>
+                <hr/>
+                <Link to={prev} className={style.postNav__item}>{prevTitle}</Link>
+              </div>
+              <div className={style.postNav__next}>
+                <p className={style.next}>Next Post →</p>
+                <hr/>
+                <Link to={next} className={style.postNav__item}>{nextTitle}</Link>
+              </div>
             </div>
           </div>
         </div>

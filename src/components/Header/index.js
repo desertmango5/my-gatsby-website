@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { NavLink } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import style from './index.module.scss'
-import logo from '../../../static/logo/website-logo.png'
+import logo from '../../assets/logo/website-logo.png'
 
 class Header extends React.Component{
   constructor() {

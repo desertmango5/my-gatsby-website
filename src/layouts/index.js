@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import '../styles/styles.scss'
-import icon32 from '../../static/logo/32-website-favicon.png'
+import icon32 from '../assets/logo/32-website-favicon.png'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
@@ -25,6 +26,7 @@ const TemplateWrapper = ({ children, data }) => (
     <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

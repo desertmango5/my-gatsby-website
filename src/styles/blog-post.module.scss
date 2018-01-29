@@ -14,13 +14,17 @@
   margin-bottom: 6rem;
 }
 
+
+// DATA
 .date {
   font: {
     size: 1.3rem;
   }
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 }
 
+
+// TITLE
 .link {
   text-decoration: none;
 }
@@ -31,36 +35,13 @@
 
 .title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   color: $heading-font-color;
   font-size: 3.5rem;
 }
 
-.authorSection {
-  display: flex;
-  align-items: center;
-  margin: 0.75rem 0 3rem 1rem;
-}
 
-.author {
-  font: {
-    size: 1.2rem;
-  }
-}
-
-.name {
-  font: {
-    size: 1.5rem;
-  }
-}
-
-.authorImage {
-  width: 32px;
-  margin-left: 1rem;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px #777;
-}
-
+// MAIN CONTENT WITH HERO IMAGE
 .coverImage {
   width: 100%;
   border-radius: 5px;
@@ -70,36 +51,53 @@
 .content {
   max-width: 900px;
   grid-column: 1 / -1;
-  margin: 3rem auto 6rem auto;
+  margin: 6rem auto 3rem auto;
 }
 
-.postNav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 100px;
-  justify-items: center;
+
+// AUTHOR
+.authorSection {
+  display: flex;
   align-items: center;
+  margin: 0 0 5rem 2rem;
 }
 
-.postNav__item {
+.author {
   font: {
-    size: 2rem;
+    size: 1.4rem;
   }
-  text-decoration: none;
-  color: $heading-font-color;
-  border-bottom: 2px solid rgba(0,0,0,0);
 }
 
-.postNav__item:hover {
-  border-bottom: 2px solid $menu-font-color;
+.name {
+  font: {
+    size: 1.7rem;
+  }
 }
 
+.authorImage {
+  width: 40px;
+  margin-left: 1rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #777;
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+
+// TAGS
 .tags {
   display: flex;
   flex-wrap: wrap;
   margin: {
-    bottom: 2rem;
+    bottom: 10rem;
   }
+}
+
+.tags__button:nth-child(even) {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .tags__button {
@@ -111,8 +109,57 @@
   border: 0;
   box-shadow: 1px 1px 3px #777;
   background: rgba(85,107,47,0.1);
+  margin-bottom: 8px;
 }
 
-.tags__button:nth-child(even) {
-  margin: 0 5px;
+
+
+// PREV/NEXT POST NAVIGATION
+.postNav {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
+
+.postNav__next,
+.postNav__prev {
+  display: grid;
+  grid-template-rows: 50px auto auto;
+}
+
+.postNav__next > hr,
+.postNav__prev > hr {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.prev {
+  margin-left: 2rem;
+  justify-self: start;
+  font-size: 1.6rem;
+}
+
+.next {
+  margin-right: 2rem;
+  justify-self: end;
+  font-size: 1.6rem;
+}
+
+.postNav__item {
+  font: {
+    size: 2rem;
+  }
+  text-decoration: none;
+  color: $heading-font-color;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+.postNav__item:hover {
+  text-shadow: 1px 1px 1px $standard-font-color;
+}
+
+
+// MEDIA QUERIES
+// TODO: make the .postNav responsive
