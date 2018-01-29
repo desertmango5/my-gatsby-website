@@ -29,14 +29,15 @@ h1 {
     size: 3rem;
     weight: 400;
   }
-  color: $standard-font-color;
+  color: $heading-font-color;
 }
 
 h2 {
   font: {
     size: 2.75rem;
   }
-  color: $standard-font-color;
+  margin: 6rem 0 2rem 0;
+  color: $heading-font-color;
 }
 
 h3 {
@@ -44,6 +45,15 @@ h3 {
     size: 2.5rem;
   }
   margin: 6rem 0 2rem 0;
+  color: $heading-font-color;
+}
+
+h4 {
+  font: {
+    size: 2rem;
+    style: italic;
+  }
+  margin: 4rem 0 2rem 0;
   color: $heading-font-color;
 }
 
@@ -124,4 +134,12 @@ li:first-child {
 
 li:last-child {
   margin-bottom: 3rem;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
 }
