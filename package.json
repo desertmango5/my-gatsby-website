@@ -8,6 +8,7 @@
     "classnames": "^2.2.5",
     "dotenv": "^4.0.0",
     "gatsby": "^1.9.158",
+    "gatsby-cli": "^1.1.33",
     "gatsby-image": "^1.0.34",
     "gatsby-link": "^1.6.34",
     "gatsby-pagination": "^1.1.0",
@@ -24,7 +25,8 @@
     "react-router-dom": "^4.2.2",
     "shortid": "^2.2.8",
     "slash": "^1.0.0",
-    "typeface-open-sans": "0.0.45"
+    "typeface-merriweather": "0.0.54",
+    "typeface-raleway": "0.0.54"
   },
   "keywords": [
     "gatsby"

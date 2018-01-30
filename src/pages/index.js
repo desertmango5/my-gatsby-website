@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import 'typeface-open-sans'
+import 'typeface-raleway'
+import 'typeface-merriweather'
 import styles from '../styles/index.module.scss'
 
 const IndexPage = () => (

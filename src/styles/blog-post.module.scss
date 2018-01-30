@@ -119,7 +119,7 @@
   display: grid;
   grid-column-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-rows: auto;
 }
 
 .postNav__next,
@@ -130,6 +130,7 @@
 
 .postNav__next > hr,
 .postNav__prev > hr {
+  max-height: 1px;
   width: 100%;
   opacity: 0.5;
 }
@@ -154,6 +155,7 @@
   color: $heading-font-color;
   text-transform: uppercase;
   margin: 0 1rem;
+  align-self: start;
 }
 
 .postNav__item:hover {
