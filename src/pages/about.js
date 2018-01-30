@@ -31,15 +31,19 @@ const About = () => (
     </p>
     <p>
       When it comes to areas in my life full of mistakes, parenting is probably at the top of that list. But I try to learn from my mistakes. For example:
-      <ol>
-        <li>Being a parent exposes your weaknesses. Boys not showing respect to each other? I need to better model what respect looks like.</li>
-        <li>Kids (and people in general) don't care about what you say. They care about what you do.</li>
-        <li>Kids (and people in general) respond better to calm discussion than to yelling. Who'd of thunk it?</li>
-        <li>When you are wrong, look your kids in the eyes and humbly own it.</li>
-        <li>Respect your kids enough to talk <strong><em>to</em></strong> them rather than talk <strong><em>at</em></strong> them.</li>
-      </ol>
     </p>
+    <ol>
+      <li>Being a parent exposes your weaknesses. Boys not showing respect to each other? I need to better model what respect looks like.</li>
+      <li>Kids (and people in general) don't care about what you say. They care about what you do.</li>
+      <li>Kids (and people in general) respond better to calm discussion than to yelling. Who'd of thunk it?</li>
+      <li>When you are wrong, look your kids in the eyes and humbly own it.</li>
+      <li>Respect your kids enough to talk <strong><em>to</em></strong> them rather than talk <strong><em>at</em></strong> them.</li>
+    </ol>
     <h3>Adulting</h3>
+    <img src="https://res.cloudinary.com/djsqo4kys/image/upload/v1517289598/adulting-sm_nqbmn3.jpg" alt="Man in business suit" className={style.adultingImage} />
+    <p>
+
+    </p>
     <h3>Work Experiences</h3>
     <p>
       

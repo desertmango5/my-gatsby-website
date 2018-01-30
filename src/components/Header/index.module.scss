@@ -51,6 +51,7 @@
     size: 1.8rem;
     weight: 100;
   }
+  letter-spacing: 0.03rem;
   text-decoration: none;
   color: $menu-font-color;
   padding: {
@@ -60,7 +61,7 @@
 }
 
 .menu__item:hover {
-  border-bottom: 2px solid gold;
+  font-weight: 200;
 }
 
 .menu__item:last-child {
