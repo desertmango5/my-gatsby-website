@@ -78,6 +78,7 @@ export const postQuery = graphql`
       slug: { eq: $slug }
     ) {
       id
+      isPublished
       title
       slug
       date(formatString: "DD MMM YYYY")

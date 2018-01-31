@@ -39,6 +39,7 @@ module.exports = {
         query: `{
           allPosts {
             id
+            isPublished
             title
             date
             slug

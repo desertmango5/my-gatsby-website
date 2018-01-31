@@ -20,6 +20,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges {
             node {
               id
+              isPublished
               title
               date
               slug
