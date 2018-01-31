@@ -6,10 +6,44 @@
   padding: $page-padding;
 }
 
-img {
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #777;
+.plus {
+  font-size: 2rem;
 }
+
+.plus:hover {
+  cursor: pointer;
+}
+
+.startup {
+  display: none;
+}
+
+
+.retail {
+  display: none;
+}
+
+.banker {
+  display: none;
+}
+
+.processor {
+  display: none;
+}
+
+.dicing {
+  display: none;
+}
+
+.tech {
+  display: none;
+}
+
+.driver {
+  display: none;
+}
+
+
 
 hr {
   opacity: 0.35;
