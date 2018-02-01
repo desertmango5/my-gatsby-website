@@ -39,8 +39,8 @@ class Photographer extends React.Component {
             <li>The difference between a professional and an amateur is the professional does not let anyone see their crap work.</li>
             <li>It takes more than a camera to be photographer. I spent <em>years</em> studying photography. My education continues and always will.</li>
             <li>I learned how to learn.</li>
-            <li>There is not a magic setting on your camera that will make your photos awesome.</li>
-            <li>You never know what another person is going to like. Several times a client has loved a photo that I was hesitant to even show them and other times they hardly notice my favorite photo from their shoot. Therefore, let people make their own choices.</li>
+            <li>There is not a magic setting on your camera that will make your photos awesome. This is true of pretty much everything in life.</li>
+            <li>You never know what another person is going to like. Several times a client has loved a photo that I was hesitant to even show them and other times they hardly noticed my favorite photo from their shoot. Therefore, let people make their own choices.</li>
             <li>Always keep your word.</li>
           </ul>
         </ToggleDisplay>

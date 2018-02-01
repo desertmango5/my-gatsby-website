@@ -1,0 +1,11 @@
+.images {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.images__portrait {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #777;
+}

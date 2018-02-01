@@ -36,6 +36,7 @@ class Dicing extends React.Component {
           </p>
           <p><strong>What I Learned</strong></p>
           <ul>
+            <li>I <em>really</em> enjoy training/teaching people. My first opportunity to be a trainer came about when a new team member needed to be trained. No one else was interested, so I volunteered... and I loved it. There is nothing like seeing the proverbial light come on for someone.</li>
             <li>When I started, I saw this position as temporary. When I finished school, I would be leaving. Since I did not intend to stay long-term, it did not seem right to me at the time to take any promotions. So right up front I indicated this. Now I realize this was a mistake and it cost me opportunites. I should never predetermine my future.</li>
             <li>We had a diverse team and no one really gave it much thought. Everyone worked at getting along and everyone did their job well. It was a great group of people to work with.</li>
             <li>Our team was much more productive when we were a private company. The manager was hands-off but there when we needed him. He trusted us to be adults and to do our job. </li>
