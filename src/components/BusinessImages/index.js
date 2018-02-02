@@ -11,22 +11,22 @@ const BusinessImages = () => (
   <div className={style.images}>
     <img 
       src={hospital} 
-      alt=""
+      alt="Oasis Hospital in Al Ain, UAE"
       className={style.images__business}  
     />
     <img 
       src={group} 
-      alt=""
+      alt="Customer service group photo"
       className={style.images__business}  
     />
     <img 
       src={doctor} 
-      alt=""
+      alt="Headshot of female doctor"
       className={style.images__business}  
     />
     <img 
       src={sign} 
-      alt=""
+      alt="Sign for Oasis Hospital in Al Ain, UAE"
       className={style.images__business}  
     />
   </div>

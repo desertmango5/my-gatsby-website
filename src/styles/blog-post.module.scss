@@ -58,8 +58,10 @@
 // AUTHOR
 .authorSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0 0 5rem 2rem;
+  justify-content: center;
+  margin: 4rem 0 5rem 2rem;
 }
 
 .author {
@@ -74,11 +76,15 @@
   }
 }
 
-.authorImage {
+.icons {
   width: 40px;
   margin-left: 1rem;
   border-radius: 50%;
   box-shadow: 1px 1px 3px #777;
+}
+
+.icons:hover {
+  transform: translateY(-5px);
 }
 
 .divider {

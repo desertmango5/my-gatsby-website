@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
 import shortid from 'shortid'
 import style from '../styles/blog-post.module.scss'
+import twitter from '../assets/icons/64-twitter.png'
+import linkedin from '../assets/icons/64-linkedin.png'
+import github from '../assets/icons/GitHub-Mark-64px.png'
 
 class BlogPost extends React.Component {
   render() {
@@ -35,12 +38,14 @@ class BlogPost extends React.Component {
                 source={post.content}
                 className={style.content}
               />
-              {post.authors.map(author => (
-                <div key={author.id} className={style.authorSection}>
-                  <p className={style.author}>Posted by <span className={style.name}>{author.name}</span></p>
-                  <img src={author.image.url} alt={author.name} className={style.authorImage} />
+                <div className={style.authorSection}>
+                  <p><strong>Let's connect!</strong></p>
+                  <section>
+                    <a href="https://twitter.com/decrepit_webdev" target="_blank" title="@decrepit_webdev"><img src={twitter} alt="Twitter logo" className={style.icons} /></a>
+                    <a href="https://github.com/mkmanges" target="_blank" title="@mkmanges"><img src={github} alt="Github logo" className={style.icons} /></a>
+                    <a href="https://www.linkedin.com/in/michaelmanges/" target="_blank" title="@michaelmanges"><img src={linkedin} alt="LinkedIn logo" className={style.icons} /></a>
+                  </section>
                 </div>
-              ))}
               <hr className={style.divider}/>
               <h5>Tags</h5>
               <div className={style.tags}>

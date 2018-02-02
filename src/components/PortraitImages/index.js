@@ -11,22 +11,22 @@ const PortraitImages = () => (
   <div className={style.images}>
     <img 
       src={man} 
-      alt=""
+      alt="Man posing on sand dune"
       className={style.images__portrait}  
     />
     <img 
       src={jumping} 
-      alt=""
+      alt="Man jumping in air throwing sand"
       className={style.images__portrait}  
     />
     <img 
       src={couple} 
-      alt=""
+      alt="Couple posing together in front of mountain"
       className={style.images__portrait}  
     />
     <img 
       src={woman} 
-      alt=""
+      alt="Woman in blue dress lying on desert sand"
       className={style.images__portrait}  
     />
   </div>
