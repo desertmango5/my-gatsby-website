@@ -33,7 +33,7 @@ class Photographer extends React.Component {
           </p>
           <p><strong>What I Learned</strong></p>
           <ul>
-            <li>Self-critique is extremely difficult but necessary.</li>
+            <li>Self-critique is extremely difficult but necessary if you want to improve your skills.</li>
             <li>Do not be afraid to put your work out in public.</li>
             <li>High quality sells itself.</li>
             <li>The difference between a professional and an amateur is the professional does not let anyone see their crap work.</li>

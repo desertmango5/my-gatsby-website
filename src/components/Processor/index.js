@@ -32,7 +32,7 @@ class Processor extends React.Component {
             This is a difficult job to discuss because my biggest takeaways are negative and cynical. One positive was my co-workers. I really enjoyed the people I worked with.  
           </p>
           <p>
-            I held two positions at this private <em>for-profit</em> university. At the time, we were pushing the boundries of online education and most of our students were spread across the U.S. I started as a financial aid advisor connecting with students over the phone. After a short period of time, I was promoted to financial aid processor. I processed all the FAFSA finicial aid including processing and dispersing federal and private student loans. I was also a liaison between the university financial aid office and the accounting office. 
+            I held two positions at this private <em>for-profit</em> university. At the time, we were pushing the boundries of online education and most of our students were spread across the U.S. I started as a financial aid advisor connecting with students over the phone. After a short period of time, I was promoted to financial aid processor. I processed all the FAFSA financial aid including processing and dispersing federal and private student loans. I was also a liaison between the university financial aid office and the accounting office. 
           </p>
           <p><strong>What I Learned</strong></p>
           <ul>
