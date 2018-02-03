@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(80px, auto);
   align-items: center;
-  grid-gap: 50px;
+  grid-gap: 30px;
   background: rgba(255,255,255,0.9);
   position: fixed;
   right: 0;
@@ -35,7 +35,7 @@
     bottom: 0.5rem;
   }
   font: {
-    size: 1.4rem;
+    size: 1.2rem;
     weight: 100;
   }
 }
@@ -71,4 +71,98 @@
 
 .menu__active {
   border-bottom: 2px solid gold;
+}
+
+.mobile {
+  display: none
+}
+
+/*****************************
+        MEDIA QUERIES
+*****************************/
+
+// change navigation to button when vw < 750px
+@media (max-width: 750px) {
+
+  .menu__item {
+    display: none;
+  }
+
+  .navigation {
+    grid-column-gap: 10px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+  }
+
+  // MENU BUTTON
+  .mobile {
+    display: grid;
+  }
+
+  .mobile__button {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    align-items: center;
+    font: {
+      size: 1.8rem;
+      weight: 200;
+      family: Raleway;
+    }
+    margin: {
+      right: 3rem;
+    }
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(85,107,47);
+    background: rgba(85,107,47,0.0);
+  }
+
+  .mobile__hamburger {
+    height: 18px;
+  }
+
+  .mobile__close {
+    margin: 0;
+    font: {
+      size: 1.8rem;
+      weight: 400;
+    }
+  }
+
+  .mobile__button:hover {
+    cursor: pointer;
+  }
+
+  // MENU ITEMS WHEN BUTTON IS TOGGLED
+  .mobile__items {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .mobile__item {
+    font: {
+      size: 2.2rem;
+      weight: 100;
+    }
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  // make logo smaller when vw < 500px
+  .title {
+    width: 90%;
+  }
+
 }

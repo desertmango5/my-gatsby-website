@@ -26,7 +26,7 @@ export default IndexPage
 export const lastThreePosts = graphql`
   query LastThree {
     allPosts(
-      sort: {fields: [date], order: DESC}
+      sort: { fields: [date], order: DESC }
       limit: 3
       ) {
       edges {
