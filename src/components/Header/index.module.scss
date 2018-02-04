@@ -73,7 +73,8 @@
   border-bottom: 2px solid gold;
 }
 
-.mobile {
+.mobile,
+.mobile__items {
   display: none
 }
 
@@ -102,9 +103,7 @@
   }
 
   .mobile__button {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 10px;
+    display: flex;
     align-items: center;
     font: {
       size: 1.8rem;
@@ -120,12 +119,8 @@
     background: rgba(85,107,47,0.0);
   }
 
-  .mobile__hamburger {
-    height: 18px;
-  }
-
   .mobile__close {
-    margin: 0;
+    margin-right: 10px;
     font: {
       size: 1.8rem;
       weight: 400;
@@ -136,7 +131,7 @@
     cursor: pointer;
   }
 
-  // MENU ITEMS WHEN BUTTON IS TOGGLED
+  // ITEMS WHEN MENU BUTTON IS TOGGLED
   .mobile__items {
     grid-column: 1 / -1;
     display: flex;
@@ -152,6 +147,10 @@
     }
     text-decoration: none;
     margin-bottom: 1.5rem;
+  }
+
+  .mobile__item:hover {
+    transform: translateY(-2px);
   }
 
 }

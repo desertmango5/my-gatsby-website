@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <p>Mention that I have a little experience as a pro photographer. Pop in a few images.</p>
     <h3>My Recent Blog Posts</h3>
     {data.allPosts.edges.map(post => (
-      <Link to={`/blog/${post.node.slug}`}>
+      <Link to={`/blog/${post.node.slug}`} key={post.node.id}>
         <p>{post.node.title}</p>
       </Link>
     ))}

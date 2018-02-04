@@ -1,12 +1,43 @@
 @import './_variables.scss';
 
 .hero {
-  right: 0;
-  left: 0;
+  background-image: url('https://res.cloudinary.com/djsqo4kys/image/upload/v1517727743/bridge_nbfljv.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
   margin-top: 83px;
-  padding: 0;
-  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px auto 350px;
+  justify-items: center;
+  align-content: center;
   box-shadow: 0 1px 3px #999;
+}
+
+.year {
+  grid-row: 1 / span 1;
+  align-self: end;
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+}
+
+.h1 {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  font: {
+    size: 4rem;
+  }
+}
+
+.byline {
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
 }
 
 .body {

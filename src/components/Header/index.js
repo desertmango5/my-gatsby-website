@@ -17,6 +17,10 @@ class Header extends React.Component {
     this.setState({ show: !this.state.show })
   }
 
+  closeMenu() {
+    this.setState({ show: false })
+  }
+
   render() {
     return (
       <div className={style.navigation}>
@@ -24,7 +28,7 @@ class Header extends React.Component {
           <Link 
             to="/" 
             className={style.title__link}
-            onClick={ () => this.handleClick() }
+            onClick={ () => this.closeMenu() }
             >
               <img src={logo} alt="Michael Manges logo" className={style.title} />
             </Link>
@@ -82,7 +86,7 @@ class Header extends React.Component {
             to="/webdev/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.handleClick() }
+            onClick={ () => this.closeMenu() }
           >
               WebDev
           </NavLink>
@@ -90,7 +94,7 @@ class Header extends React.Component {
             to="/blog/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.handleClick() }
+            onClick={ () => this.closeMenu() }
           >
             Blog
           </NavLink>
@@ -98,7 +102,7 @@ class Header extends React.Component {
             to="/about/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.handleClick() }
+            onClick={ () => this.closeMenu() }
           >
             About
           </NavLink>
@@ -106,7 +110,7 @@ class Header extends React.Component {
             to="/photography/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.handleClick() }
+            onClick={ () => this.closeMenu() }
           >
             Photography
           </NavLink>
