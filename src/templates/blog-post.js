@@ -20,6 +20,8 @@ class BlogPost extends React.Component {
 
     const nextTitle = createTitle(next)
     const prevTitle = createTitle(prev)
+
+    console.log('hello')
     
     return (
       <div>

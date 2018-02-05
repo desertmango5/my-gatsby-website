@@ -22,7 +22,7 @@ const About = () => (
     <p>
       If it's true that we are all our own brand, I want my brand to the real version of myself. Hair messed up. Clothes dirty. Me being a little smelly. In one word: <em>real</em> 
     </p>
-    <h2>The TLDR Story</h2>
+    <h2>The TL;DR Story</h2>
     <p>
       I often hear myself telling my three sons that they need to learn from their mistakes. That is good advice for me, too. There are so many times I would love to go back in time so I could have a redo. Of course, I cannot but I can prevent history from repeating itself by learning from my mistakes. Below I'm going to share some of what my history has taught me. 
     </p>

@@ -25,13 +25,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `img`,
-        path: `${__dirname}/src/assets/images/`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-svgr`,
       options: {
         dir: `./src/assets/svg`,

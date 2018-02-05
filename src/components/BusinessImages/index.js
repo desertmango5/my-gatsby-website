@@ -1,31 +1,27 @@
 import React from 'react' 
 import Img from 'gatsby-image'
 import style from './index.module.scss'
-import doctor from '../../assets/images/photography/business/doctor.jpg'
-import group from '../../assets/images/photography/business/group.jpg'
-import hospital from '../../assets/images/photography/business/hospital.jpg'
-import sign from '../../assets/images/photography/business/sign.jpg'
 
 
 const BusinessImages = () => (
   <div className={style.images}>
     <img 
-      src={hospital} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/hospital.jpg`} 
       alt="Oasis Hospital in Al Ain, UAE"
       className={style.images__business}  
     />
     <img 
-      src={group} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/group.jpg`} 
       alt="Customer service group photo"
       className={style.images__business}  
     />
     <img 
-      src={doctor} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/doctor.jpg`} 
       alt="Headshot of female doctor"
       className={style.images__business}  
     />
     <img 
-      src={sign} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/sign.jpg`} 
       alt="Sign for Oasis Hospital in Al Ain, UAE"
       className={style.images__business}  
     />

@@ -2,10 +2,11 @@
 
 .footer {
   background: $footer-bg-color;
-  height: 250px;
+  height: 200px;
   display: grid;
+  grid-template-rows: 50px auto 50px;
   justify-items: center;
-  align-content: center;
+  align-items: center;
   box-shadow: 0 -1px 3px #999;
   margin: 0;
   padding: 0;
@@ -16,10 +17,13 @@
 }
 
 .gatsby {
+  margin: 0;
   font: {
     weight: 100;
   }
   letter-spacing: 0.1rem;
+  grid-row: 1 / span 1;
+  align-self: end;
 }
 
 .heart {
@@ -28,10 +32,12 @@
 }
 
 .logos {
+  grid-row: 2 / span 1;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   grid-column-gap: 30px;
+  margin: 0;
 }
 
 .gatsbylogo {
@@ -45,6 +51,9 @@
 }
         
 .copyright {
+  margin: 0;
+  grid-row: 3 / span 1;
+  align-self: start;
   font: {
     size: 1.5rem;
     weight: 100;

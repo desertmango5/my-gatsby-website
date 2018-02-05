@@ -4,4 +4,133 @@
   max-width: $max-width;
   padding: $page-padding;
   margin: $page-margin;
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 75px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto;
+}
+
+.intro {
+  grid-column: 1 / -1;
+}
+
+.frontend h3,
+.photography h3,
+.blog h3 {
+  margin-top: 0;
+}
+
+.frontend {
+  grid-column: 1 / span 2;
+  margin: {
+    top: 0;
+  }
+}
+
+.frontend__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.frontend__list1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.frontend__list2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.photography {
+  grid-column: 1 / span 2;
+}
+
+.photography__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 3rem;
+  margin: {
+    top: 3rem;
+  }
+}
+
+.photography__image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.photography__link {
+  grid-column: 2 / span 1;
+  justify-self: center;
+  width: auto;
+}
+
+.photography__button {
+  width: 120px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 1px 1px 4px #777;
+  background: rgba(0,0,0,0);
+  font: {
+    size: 1.3rem;
+  }
+}
+
+.photography__button:hover {
+  cursor: pointer;
+  background: rgba(255,255,255,0.3);
+}
+
+.blog {
+  grid-column: 3 / -1;
+  grid-row: 2 / -1;
+  padding: 0 0 0 3rem;
+  border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+.blog__post {
+  margin: {
+    bottom: 4rem;
+  }
+}
+
+.blog__date {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  font: {
+    size: 1.3rem;
+  }
+  margin: 0;
+}
+
+.blog__link {
+  text-decoration: none;
+}
+
+.blog__link:hover {
+  text-decoration: underline;
+}
+
+.blog__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: $heading-font-color;
+  font-size: 2rem;
+}
+
+.blog__image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #777;
 }

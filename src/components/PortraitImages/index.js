@@ -1,31 +1,27 @@
 import React from 'react' 
 import Img from 'gatsby-image'
 import style from './index.module.scss'
-import couple from '../../assets/images/photography/portraits/couple.jpg'
-import jumping from '../../assets/images/photography/portraits/jumping.jpg'
-import man from '../../assets/images/photography/portraits/man.jpg'
-import woman from '../../assets/images/photography/portraits/woman.jpg'
 
 
 const PortraitImages = () => (
   <div className={style.images}>
     <img 
-      src={man} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/man.jpg`} 
       alt="Man posing on sand dune"
       className={style.images__portrait}  
     />
     <img 
-      src={jumping} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/jumping.jpg`} 
       alt="Man jumping in air throwing sand"
       className={style.images__portrait}  
     />
     <img 
-      src={couple} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/couple.jpg`} 
       alt="Couple posing together in front of mountain"
       className={style.images__portrait}  
     />
     <img 
-      src={woman} 
+      src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517811454/mysite/woman.jpg`} 
       alt="Woman in blue dress lying on desert sand"
       className={style.images__portrait}  
     />
