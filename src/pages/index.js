@@ -49,6 +49,7 @@ const IndexPage = ({ data }) => (
     </section>
     {/* BLOG */}
     <section className={style.blog}>
+      <hr className={style.blog__hr} />
       <h3>Recent Blog Posts</h3>
       {data.allPosts.edges.map(post => (
         <div className={style.blog__post}>

@@ -104,25 +104,22 @@
 
   .mobile__button {
     display: flex;
-    align-items: center;
-    font: {
-      size: 1.8rem;
-      weight: 200;
-      family: Raleway;
-    }
     margin: {
       right: 3rem;
     }
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(85,107,47);
+    border: 0;
     background: rgba(85,107,47,0.0);
   }
 
+  .hamburger {
+    height: 2.5rem;
+    margin: 0;
+  }
+
   .mobile__close {
-    margin-right: 10px;
+    margin: 0;
     font: {
-      size: 1.8rem;
+      size: 4rem;
       weight: 400;
     }
   }

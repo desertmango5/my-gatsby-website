@@ -37,7 +37,7 @@ class Header extends React.Component {
         <nav className={style.menu}>
           
           {/* MOBILE NAVIGATION */}
-          <nav className={style.mobile}>
+          {/* <nav className={style.mobile}>
             <button 
               onClick={ () => this.handleClick() } 
               className={style.mobile__button}
@@ -46,6 +46,21 @@ class Header extends React.Component {
               <ToggleDisplay if={this.state.show} className={style.mobile__close}>
                 &times;
               </ToggleDisplay>Menu</button>
+          </nav> */}
+          
+          <nav className={style.mobile}>
+            <button 
+              onClick={ () => this.handleClick() } 
+              className={style.mobile__button}
+            >
+              
+              <ToggleDisplay if={this.state.show} className={style.mobile__close}>
+                &times;
+              </ToggleDisplay>
+              <ToggleDisplay if={!this.state.show}>
+                <img src={hamburger} className={style.hamburger} />
+              </ToggleDisplay> 
+            </button>
           </nav>
           
 

@@ -14,15 +14,12 @@ const About = () => (
   <div className={style.body}>
     <h2>The Short Story</h2>
     <p>
-      This is where I reveal my amazing life; the social media version of me. No worts. No mistakes. I have it ALL together. Gosh-darn-it-people-like-me stuff. Hmmm...
-    </p>
-    <p>
       I learned an important lesson about being genuine when my wife and I were just getting to know each other. We found ourselves on an overnight backpacking trip with mutual friends in the Superstition Mountains in Arizona. If you've ever been backpacking, you know that your hair gets messed up, your clothes are dirty, and, if you're like me, you might develop an odd smell. On that trip the normal dating pretenses were blown away and she saw a much closer version of the real me. For 30 miles, Kelly and I hiked and talked without the pretenses of looking and acting like the best versions of ourselves. The results? We were married in October 2001 and I feel like I married the same person I dated because we had been real with each other from the beginning.  
     </p>
     <p>
       If it's true that we are all our own brand, I want my brand to the real version of myself. Hair messed up. Clothes dirty. Me being a little smelly. In one word: <em>real</em> 
     </p>
-    <h2>The TL;DR Story</h2>
+    <h2>TL;DR</h2>
     <p>
       I often hear myself telling my three sons that they need to learn from their mistakes. That is good advice for me, too. There are so many times I would love to go back in time so I could have a redo. Of course, I cannot but I can prevent history from repeating itself by learning from my mistakes. Below I'm going to share some of what my history has taught me. 
     </p>
@@ -80,6 +77,46 @@ const About = () => (
       Years ago, when I was in 9th grade my high school had a career day. I was an athlete so athletic training sounded interesting. There wasn't much interest from anyone else, so they assigned me to the physical therapy group. As a 15 year old punk, even though I knew everything I didn't know what a physical therapist did. 
     </p>
     <h3>For Fun</h3>
+    <h4>Hiking</h4>
+    <p>
+      One of the reasons I moved to Arizona from the midwest was the climate. I love to be outdoors and hiking a mountain trail might be one of my all time favorite activites. My wife and I really got to know each other while hiking. It's great exercise and it takes me away from the stress of life. My favorite trail is the Echo Canyon Trailhead on Camelback Mountain in Phoenix, Arizona.
+    </p>
+    <h4>Camping</h4>
+    <p>
+      When I was a kid most of our family vacations involved camping. Often it was close to home but a few times we traveled as far as the Great Smoky Mountains. My 8th birthday was spent camping in the Smokies.
+    </p>
+    <p>
+      Camping is a little different now. In Arizona, there is a lot of public land and you are free to use it for camping. In the UAE we are able to pitch a tent just about anywhere along the Indian Ocean beach.
+    </p>
+    <h4>Fishing</h4>
+    <p>
+      Again, this goes back to my childhood and now Kelly and our boys are also <em>hooked</em> on fishing. We aren't hardcore anglers. When visiting my parents, we generally enjoy taking a couple boats out on a calm lake to bobber fish for bluegills. Our favorite lake is hidden gem called Little Turkey in northeast Indiana.
+    </p>
+    <h4>Rock Hounding</h4>
+    <p>
+      I picked up rock hounding after moving to Arizona. It's basically like going on a treasure hunt in beautiful places in search for specimens of amethyst, jade, agate, jasper, petrified wood, tiger's eye, etc.
+    </p>
+    <h4>Traveling</h4>
+    <p>
+      I've had a few traveling goals since I was younger:
+    </p>
+    <ol>
+      <li>Visit all 50 U.S. states</li>
+      <li>Visit all 7 continents</li>
+    </ol>
+    <p>
+      So far I've been to 43 states but I'm a little behind schedule on the continents. I've only been to North American, Asia, and Europe. My favorite cities visited so far (in no particular order):
+    </p>
+    <ul>
+      <li>Seoul, South Korea</li>
+      <li>Paris, France</li>
+      <li>London, England</li>
+      <li>Bangkok, Thailand</li>
+      <li>Singapore</li>
+      <li>Dubai, United Arab Emirates</li>
+      <li>San Diego, CA, USA</li>
+      <li>Chicago, IL, USA</li>
+    </ul>
   </div>
 )
 

@@ -47,3 +47,22 @@
   margin-top: 0;
 }
 
+/*******************************
+        MEDIA QUERIES
+*******************************/
+
+@media (max-width: 750px) {
+
+  .hero {
+    grid-template-rows: 200px auto 200px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .hero {
+    grid-template-rows: 150px auto 150px;
+  }
+
+}

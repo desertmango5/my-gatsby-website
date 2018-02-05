@@ -8,7 +8,7 @@
   grid-row-gap: 50px;
   grid-column-gap: 75px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4, auto);
 }
 
 .intro {
@@ -133,4 +133,63 @@
   width: 100%;
   border-radius: 5px;
   box-shadow: 1px 1px 5px #777;
+}
+
+.blog__hr {
+  display: none;
+}
+
+
+/*************************************
+        MEDIA QUERIES
+*************************************/
+
+@media (max-width: 750px) {
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    grid-column: 1 / -1;
+    order: 0;
+  }
+
+  .frontend {
+    grid-column: 1 / -1;
+    order: 1;
+  }
+
+  .photography {
+    grid-column: 1 / -1;
+    order: 2;
+  }
+
+  .blog {
+    grid-column: 1 / -1;
+    grid-row: 4 / span 1;
+    border: 0;
+    padding: 0;
+    order: 4;
+    margin: {
+      top: 4rem;
+    }
+  }
+
+  .blog h3 {
+    margin: {
+      top: 3rem;
+    }
+  }
+
+  .blog__post {
+    margin: {
+      bottom: 8rem;
+    }
+  }
+
+  .blog__hr {
+    display: block;
+  }
+
 }

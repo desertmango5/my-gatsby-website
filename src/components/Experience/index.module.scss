@@ -1,0 +1,22 @@
+.exp {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;
+  justify-items: center;
+}
+
+.logo {
+  grid-column: 1 / span 1;
+  margin: 2rem 0;
+}
+
+.tool {
+  margin: 0;
+  grid-column: 1 / span 1;
+}
+
+.skill {
+  margin: 0;
+  grid-column: 1 / span 1;
+}

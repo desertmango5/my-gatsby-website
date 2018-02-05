@@ -169,5 +169,29 @@
 }
 
 
-// MEDIA QUERIES
-// TODO: make the .postNav responsive
+/*******************************
+        MEDIA QUERIES
+*******************************/
+
+@media (max-width: 600px) {
+
+  .postNav {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 50px;
+  }
+
+  .prev,
+  .next {
+    margin: 0;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .postNav__item {
+    justify-self: center;
+  }
+
+}
