@@ -1,0 +1,35 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background: rgba(85,107,47,0.1);
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+
+.name {
+  margin: 2rem 0 3.5rem 0;
+  padding: 0 2rem;
+}
+
+.name__link {
+  color: #555;
+  text-decoration: none;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.logo {
+  width: 35px;
+  margin: .5rem .5rem;
+}
+
+.desc {
+  padding: 0 3rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react' 
 import style from '../styles/webdev.module.scss'
 import Experience from '../components/Experience'
+import Project from '../components/Project'
 import ReactLogo from '../assets/icons/react-logo.png'
 import JS from '../assets/icons/js-logo.png'
 import ES6 from '../assets/icons/es6-logo.png'
@@ -19,6 +20,8 @@ import Gatsby from '../assets/icons/gatsby-logo.png'
 import CSSGrid from '../assets/icons/css-grid-logo.png'
 import Mongo from '../assets/icons/mongodb-logo.png'
 import Express from '../assets/icons/express-logo.png'
+import Pug from '../assets/icons/pug-logo.png'
+import SASS from '../assets/icons/sass-logo.png'
 
 const Webdev = () => (
   <div className={style.body}>
@@ -122,10 +125,49 @@ const Webdev = () => (
         tool="ExpressJS"
         level="5"
       />
+      <Experience 
+        logo={Pug}
+        tool="Pug"
+        level="5"
+      />
+      <Experience 
+        logo={SASS}
+        tool="SASS"
+        level="7"
+      />
     </section>
     <h2>Projects</h2>
     <section className={style.projects}>
-
+      <Project 
+        name="michaelmanges.com"
+        url="https://michaelmanges.netlify.com"
+        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, GraphCMS, JAM, Photoshop, CSSGrid, NPM]}
+        desc="My professional website and blog."
+      />
+      <Project 
+        name="Recipe Box"
+        url="https://github.com/mkmanges/recipe-box"
+        logos={[NodeJS, JS, ES6, Express, Pug, NPM, CSS3, SASS, Webpack, Mongo, HTMLLogo]}
+        desc="A personal project I made for my wife to store and search for recipes."
+      />
+      <Project 
+        name="Rock Paper Scissors"
+        url="https://mkmanges.github.io/rock-paper-scissors/"
+        logos={[JS, Vue, NPM, HTMLLogo, SASS, CSS3]}
+        desc="Personal project to learn Vue.js modules."
+      />
+      <Project 
+        name="Wikipedia Viewer"
+        url="https://mkmanges.github.io/wikipedia-viewer/"
+        logos={[JS, HTMLLogo, ES6, NPM, SASS, CSS3]}
+        desc="A FreeCodeCamp JavaScript API project."
+      />
+      <Project 
+        name="Chuck Norris Quote Machine"
+        url="https://mkmanges.github.io/chuck-norris-facts/"
+        logos={[JS, HTMLLogo, ES6, NPM, CSS3]}
+        desc="A FreeCodeCamp JavaScript API project."
+      />
     </section>
   </div>
 )

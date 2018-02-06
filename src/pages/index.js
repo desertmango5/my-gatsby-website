@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => (
     <section className={style.intro}>
       <h1>Frontend Web Developer Wannabe</h1>
       <p>
-        I am activity looking for my first full-time Frontend Web Developer position in my hometown Phoenix, AZ, USA or certain locations in Europe. My ideal company will use modern web development tools and have a nurturing culture where I can continue learning.
+        I am activity looking for my first full-time Frontend Web Developer position in my hometown Phoenix, AZ, USA or certain locations in Europe. My ideal company embraces modern web development tools and have a nurturing culture where I can continue learning.
       </p>
     </section>
     {/* FRONTEND */}

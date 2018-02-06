@@ -28,3 +28,12 @@
     top: 3rem;
   }
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: {
+    top: 3rem;
+  }
+}
