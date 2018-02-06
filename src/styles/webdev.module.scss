@@ -9,13 +9,22 @@
   grid-template-rows: minmax(150px, auto-flow) auto;
 }
 
-.skills {
+.about {
+}
+
+.about__heading {
   margin: 0 0 3rem 0;
 }
 
-.tools {
+.skills {
+}
+
+.experience {
   display: grid;
   grid-gap: 4rem 1rem;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   justify-items: center;
+  margin: {
+    top: 3rem;
+  }
 }

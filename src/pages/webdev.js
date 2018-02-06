@@ -22,8 +22,16 @@ import Express from '../assets/icons/express-logo.png'
 
 const Webdev = () => (
   <div className={style.body}>
-    <h2 className={style.skills}>Web Development Skills</h2>
-    <section className={style.tools}>
+    <section className={style.about}>
+      <h2 className={style.about__heading}>Web Development Skills</h2>
+      <p><em><strong>#LearningByDoing</strong></em></p>
+      <p>
+        I read official documentation, countless blogs, and follow along with numerous training videos on my way to becoming a Frontend Web Developer. But at the end of the day, nothing increases my understanding of any concept like rolling up my sleeves and attempting a project without a safety net. 
+      </p>
+      <p>My intention to learn Frontend Web Development began in June 2017 after three years as the IT Manager for a Dubai sports training and retail startup. I am proud of how far I've come in a short time but I still have a lot to learn. Of course, this is web development so I will <em>always</em> have a lot to learn!</p>
+    </section>
+    <h2>Technology I'm Learning</h2>
+    <section className={style.experience}>
       <Experience 
         logo={JS}
         tool="JavaScript"
@@ -114,6 +122,10 @@ const Webdev = () => (
         tool="ExpressJS"
         level="5"
       />
+    </section>
+    <h2>Projects</h2>
+    <section className={style.projects}>
+
     </section>
   </div>
 )
