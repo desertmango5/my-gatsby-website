@@ -4,19 +4,22 @@
   grid-auto-flow: column;
   grid-auto-rows: auto;
   justify-items: center;
+  background: rgba(85,107,47,0.1);
+  border-radius: 0.5rem;
 }
 
 .logo {
   grid-column: 1 / span 1;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .tool {
   margin: 0;
   grid-column: 1 / span 1;
+
 }
 
 .skill {
-  margin: 0;
+  margin: 1rem 0;
   grid-column: 1 / span 1;
 }

@@ -11,7 +11,7 @@ const Experience = (props) => (
       className={style.logo}  
     />
     <h3 className={style.tool}>{props.tool}</h3>
-    <p className={style.skill}>Skill Level: <span className={style.rating}>{props.level}</span></p>
+    <p className={style.skill}>Skill Level: <span className={style.rating}><strong>{props.level}</strong></span></p>
   </section>
 )
 

@@ -4,4 +4,18 @@
   max-width: $max-width;
   margin: $page-margin;
   padding: $page-padding;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(150px, auto-flow) auto;
+}
+
+.skills {
+  margin: 0 0 3rem 0;
+}
+
+.tools {
+  display: grid;
+  grid-gap: 4rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  justify-items: center;
 }
