@@ -28,20 +28,6 @@ const IndexPage = ({ data }) => (
         <img src={GraphQLLogo} alt="GraphQL logo" className={style.frontend__logo} />
         <img src={Gatsby} alt="Gatsby logo" className={style.frontend__logo} />
         <img src={JAM} alt="JAMstack" className={style.frontend__logo} />
-        {/* <ul className={style.frontend__list1}>
-          <li>React</li>
-          <li>JAMstack</li>
-          <li>JavaScript</li>
-          <li>ES6</li>
-          <li>Node.js</li>
-        </ul>
-        <ul className={style.frontend__list2}>
-          <li>Headless CMS</li>
-          <li>CSS Grid</li>
-          <li>Flexbox</li>
-          <li>GatsbyJS</li>
-          <li>GraphQL</li>
-        </ul> */}
       </section>
       <p>Continue to my <Link to="/webdev/" className={style.link}>WebDev</Link> page to learn more about my Frontend Web Developer skills.</p>
     </section>
