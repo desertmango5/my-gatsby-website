@@ -3,6 +3,12 @@ import Link from 'gatsby-link'
 import 'typeface-raleway'
 import 'typeface-merriweather'
 import style from '../styles/index.module.scss'
+import JAM from '../assets/icons/jamstack-logo.png'
+import ReactLogo from '../assets/icons/react-logo.png'
+import ES6 from '../assets/icons/es6-logo.png'
+import GraphQLLogo from '../assets/icons/graphql-logo.png'
+import Gatsby from '../assets/icons/gatsby-logo.png'
+
 
 const IndexPage = ({ data }) => (
   <div className={style.body}>
@@ -16,8 +22,13 @@ const IndexPage = ({ data }) => (
     <section className={style.frontend}>
       <h3>Modern Frontend Technology</h3>
       <p>Since June 2017 I have been a full-time frontend web development student focusing on modern build tools.</p>
-      <section className={style.frontend__lists}>
-        <ul className={style.frontend__list1}>
+      <section className={style.frontend__logos}>
+        <img src={ReactLogo} alt="React logo" className={style.frontend__logo} />
+        <img src={ES6} alt="ES6 logo" className={style.frontend__logo} />
+        <img src={GraphQLLogo} alt="GraphQL logo" className={style.frontend__logo} />
+        <img src={Gatsby} alt="Gatsby logo" className={style.frontend__logo} />
+        <img src={JAM} alt="JAMstack" className={style.frontend__logo} />
+        {/* <ul className={style.frontend__list1}>
           <li>React</li>
           <li>JAMstack</li>
           <li>JavaScript</li>
@@ -30,7 +41,7 @@ const IndexPage = ({ data }) => (
           <li>Flexbox</li>
           <li>GatsbyJS</li>
           <li>GraphQL</li>
-        </ul>
+        </ul> */}
       </section>
       <p>Continue to my <Link to="/webdev/" className={style.link}>WebDev</Link> page to learn more about my Frontend Web Developer skills.</p>
     </section>

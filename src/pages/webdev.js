@@ -140,7 +140,7 @@ const Webdev = () => (
     <section className={style.projects}>
       <Project 
         name="michaelmanges.com"
-        url="https://michaelmanges.netlify.com"
+        url="https://www.michaelmanges.com"
         logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, GraphCMS, JAM, Photoshop, CSSGrid, NPM]}
         desc="My professional website and blog."
       />
