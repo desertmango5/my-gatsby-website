@@ -147,7 +147,7 @@ const Webdev = () => (
       <Project 
         name="Recipe Box"
         url="https://github.com/mkmanges/recipe-box"
-        logos={[NodeJS, JS, ES6, Express, Pug, NPM, CSS3, SASS, Webpack, Mongo, HTMLLogo]}
+        logos={[JS, NodeJS, ES6, Express, Pug, NPM, CSS3, SASS, Webpack, Mongo, HTMLLogo]}
         desc="A personal project I made for my wife to store and search for recipes."
       />
       <Project 
