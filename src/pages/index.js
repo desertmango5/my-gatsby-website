@@ -13,9 +13,9 @@ import Gatsby from '../assets/icons/gatsby-logo.png'
 const IndexPage = ({ data }) => (
   <div className={style.body}>
     <section className={style.intro}>
-      <h1>Frontend Web Developer Wannabe</h1>
+      <h1>Frontend Developer Wannabe</h1>
       <p>
-        I am activity looking for my first full-time Frontend Web Developer position in my hometown Phoenix, AZ, USA or certain locations in Europe. My ideal company embraces modern web development tools and have a nurturing culture where I can continue learning.
+        I am actively looking for my first full-time Frontend Developer position in my hometown Phoenix, AZ, USA or certain locations in Europe. My ideal company embraces modern web development tools and have a nurturing culture where I can continue learning.
       </p>
     </section>
     {/* FRONTEND */}
