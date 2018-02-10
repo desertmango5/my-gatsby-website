@@ -9,7 +9,7 @@ import github from '../assets/icons/GitHub-Mark-64px.png'
 
 class BlogPost extends React.Component {
   render() {
-    const post = this.props.data.posts
+    const post = this.props.data.contentfulBlogPost
     const { next, prev } = this.props.pathContext
 
     const createTitle = (slug) => {
@@ -20,8 +20,6 @@ class BlogPost extends React.Component {
 
     const nextTitle = createTitle(next)
     const prevTitle = createTitle(prev)
-
-    console.log('hello')
     
     return (
       <div>
@@ -32,12 +30,12 @@ class BlogPost extends React.Component {
             
             <div className={style.main}>
               <img 
-                src={post.coverImage.url} 
+                src={post.heroImage.file.url} 
                 alt={post.title}
                 className={style.coverImage}  
               />
               <Markdown
-                source={post.content}
+                source={post.content.content}
                 className={style.content}
               />
                 <div className={style.authorSection}>
@@ -50,11 +48,12 @@ class BlogPost extends React.Component {
                 </div>
               <hr className={style.divider}/>
               <h5>Tags</h5>
-              <div className={style.tags}>
+              {/* <div className={style.tags}>
                 {post.tags.map(tag => (
                   <button key={shortid.generate()} className={style.tags__button}>{tag}</button>
                 ))}
-              </div>
+              </div> */}
+              <p>{post.tags}</p>
             </div>
             <div className={style.postNav}>
               <div className={style.postNav__prev}>
@@ -81,34 +80,32 @@ export const postQuery = graphql`
   query readEachBlogPost(
     $slug: String!
   ) {
-    posts(
+    contentfulBlogPost(
       slug: { eq: $slug }
     ) {
       id
-      isPublished
       title
       slug
-      date(formatString: "DD MMM YYYY")
       tags
-      category
-      content
-      coverImage {
+      content {
         id
-        url
-        width
-        height
-        handle
+        content
       }
-      authors {
+      date(formatString: "MMM DD, YYYY")
+      heroImage {
         id
-        name
-        image {
-          id
+        file {
           url
         }
-        posts {
+      }
+      authorInfo {
+        id
+        name
+        photo {
           id
-          title
+          file {
+            url
+          }
         }
       }
     }

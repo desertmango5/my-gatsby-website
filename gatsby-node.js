@@ -14,39 +14,31 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
     graphql(`
       {
-        allPosts (
-          limit: 1000
-        ) {
+        allContentfulBlogPost {
           edges {
             node {
               id
-              isPublished
               title
-              date
               slug
-              excerpt
-              content
-              category
-              tags
-              coverImage {
+              content {
                 id
-                handle
-                height
-                width
-                url
+                content
               }
-              authors {
+              date
+              heroImage {
                 id
-                bio
-                name
-                image {
-                  id
+                file {
                   url
-                  handle
                 }
-                posts {
+              }
+              authorInfo {
+                id
+                name
+                photo {
                   id
-                  title
+                  file {
+                    url
+                  }
                 }
               }
             }
@@ -61,7 +53,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // create blog.js page that passes pathContext props to blog-post.js
         createPaginationPages({
           createPage,
-          edges: result.data.allPosts.edges,
+          edges: result.data.allContentfulBlogPost.edges,
           component: slash(blogTemplate),
           pathFormatter: prefixPathFormatter("/blog"),
           limit: 10
@@ -70,7 +62,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // create page for each blog post when title is clicked
         createLinkedPages({
           createPage,
-          edges: result.data.allPosts.edges,
+          edges: result.data.allContentfulBlogPost.edges,
           component: slash(postTemplate),
           edgeParser: edge => ({
             path: `/blog/${edge.node.slug}`,

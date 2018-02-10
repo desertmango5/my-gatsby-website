@@ -74,19 +74,6 @@ module.exports = {
               }
             }
           },
-          allAuthors {
-            id
-            name
-            bio
-            posts {
-              id
-              title
-            }
-            image {
-              id
-              url
-            }
-          },
         }`
       }
     }
