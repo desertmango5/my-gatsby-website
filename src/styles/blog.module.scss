@@ -108,7 +108,7 @@
   background: rgba(85,107,47,0.1);
 }
 
-.coverImage {
+.heroImage {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
   width: 100%;
@@ -124,7 +124,7 @@
     grid-auto-rows: auto;
   }
 
-  .coverImage {
+  .heroImage {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     order: 1;

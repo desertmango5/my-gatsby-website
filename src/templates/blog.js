@@ -8,26 +8,25 @@ const Blog = ({ data }) => {
   return (
     <div>
       <div className={style.body}>
-        {data.allPosts.edges.map(post => (
+        {data.allContentfulBlogPost.edges.map(post => (
           <div key={post.node.id} className={style.post}>
             <p className={style.date}>{post.node.date}</p>
             <Link to={post.node.slug} className={style.link}>
               <h2 className={style.title}>{post.node.title}</h2>
             </Link>
-            {post.node.authors.map(author => (
-              <div key={author.id} className={style.authorSection}>
-                <p className={style.author}>Posted by <span className={style.name}>{author.name}</span></p>
-                <img src={author.image.url} alt={author.name} className={style.authorImage} />
-              </div>
-            ))}
+            {/* AUTHOR SECTION */}
+            <div key={post.node.authorInfo.id} className={style.authorSection}>
+              <p className={style.author}>Posted by <span className={style.name}>{post.node.authorInfo.name}</span></p>
+              <img src={post.node.authorInfo.photo.file.url} alt={post.node.authorInfo.name} className={style.authorImage} />
+            </div>
             <div className={style.main}>
               <img 
-                src={post.node.coverImage.url} 
+                src={post.node.heroImage.file.url} 
                 alt={post.node.title}
-                className={style.coverImage}  
+                className={style.heroImage}  
               />
               <Markdown
-                source={post.node.excerpt}
+                source={post.node.excerpt.excerpt}
                 className={style.excerpt}
               />
               <Link to={post.node.slug} className={style.buttonLink}>
@@ -45,36 +44,33 @@ export default Blog
 
 export const allPostsQuery = graphql`
   query allPosts {
-    allPosts(
+    allContentfulBlogPost(
       sort: {fields: [date], order: DESC}
       ) {
       edges {
         node {
-          id          
-          isPublished
+          id
           title
           slug
-          date(formatString: "DD MMM YYYY")
-          tags
-          category
-          excerpt
-          coverImage {
+          excerpt {
             id
-            url
-            width
-            height
-            handle
+            excerpt
           }
-          authors {
+          date(formatString: "MMM DD, YYYY")
+          heroImage {
             id
-            name
-            image {
-              id
+            file {
               url
             }
-            posts {
+          }
+          authorInfo {
+            id
+            name
+            photo {
               id
-              title
+              file {
+                url
+              }
             }
           }
         }
