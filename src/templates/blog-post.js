@@ -48,12 +48,11 @@ class BlogPost extends React.Component {
                 </div>
               <hr className={style.divider}/>
               <h5>Tags</h5>
-              {/* <div className={style.tags}>
-                {post.tags.map(tag => (
+              <div className={style.tag}>
+                {post.tag.map(tag => (
                   <button key={shortid.generate()} className={style.tags__button}>{tag}</button>
                 ))}
-              </div> */}
-              <p>{post.tags}</p>
+              </div>
             </div>
             <div className={style.postNav}>
               <div className={style.postNav__prev}>
@@ -86,7 +85,7 @@ export const postQuery = graphql`
       id
       title
       slug
-      tags
+      tag
       content {
         id
         content

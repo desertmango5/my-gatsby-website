@@ -33,50 +33,10 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `tmvc2qm2l3zx`,
-        accessToken: `6b844873e161896f2793bbdbf5bba34deb637c08576e2258d311cc968858a453`,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACEID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: `gatsby-source-graphcms`,
-      options: {
-        endpoint: process.env.GATSBY_BLOG_ENDPOINT,
-        query: `{
-          allPosts {
-            id
-            isPublished
-            title
-            date
-            slug
-            excerpt
-            content
-            category
-            tags
-            coverImage {
-              id
-              handle
-              height
-              width
-              url
-            }
-            authors {
-              id
-              bio
-              name
-              image {
-                id
-                url
-                handle
-              }
-              posts {
-                id
-                title
-              }
-            }
-          },
-        }`
-      }
-    }
   ],
 };
 
