@@ -31,6 +31,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `tmvc2qm2l3zx`,
+        accessToken: `6b844873e161896f2793bbdbf5bba34deb637c08576e2258d311cc968858a453`,
+      },
+    },
+    {
       resolve: `gatsby-source-graphcms`,
       options: {
         endpoint: process.env.GATSBY_BLOG_ENDPOINT,

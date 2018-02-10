@@ -48,8 +48,8 @@ const IndexPage = ({ data }) => (
     <section className={style.blog}>
       <hr className={style.blog__hr} />
       <h3>Recent Blog Posts</h3>
-      {data.allPosts.edges.map(post => (
-        <div className={style.blog__post}>
+      {data.allContentfulBlogPost.edges.map(post => (
+        <div key={post.node.id} className={style.blog__post}>
           <p className={style.blog__date}>{post.node.date}</p>
           <Link 
             key={post.node.id}
@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => (
           >
             <h4 className={style.blog__title}>{post.node.title}</h4>
           </Link>
-          <img src={post.node.coverImage.url} alt={post.node.title} className={style.blog__image} />
+          <img src={post.node.heroImage.file.url} alt={post.node.title} className={style.blog__image} />
         </div>
         ))}
     </section>
@@ -69,19 +69,21 @@ export default IndexPage
 
 export const lastThreePosts = graphql`
   query LastThree {
-    allPosts(
-      sort: { fields: [date], order: DESC }
+    allContentfulBlogPost(
+      sort: {fields: [date], order: DESC}
       limit: 3
-      ) {
+    ) {
       edges {
         node {
           id
           title
           slug
-          date(formatString: "DD MMM YYYY")
-          coverImage {
+          date(formatString: "MMM DD, YYYY")
+          heroImage {
             id
-            url
+            file {
+              url
+            }
           }
         }
       }
