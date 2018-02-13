@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import 'typeface-raleway'
-import 'typeface-merriweather'
+import 'typeface-titillium-web'
 import style from '../styles/index.module.scss'
 import JAM from '../assets/icons/jamstack-logo.png'
 import ReactLogo from '../assets/icons/react-logo.png'
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
         <img src={Gatsby} alt="Gatsby logo" className={style.frontend__logo} />
         <img src={JAM} alt="JAMstack" className={style.frontend__logo} />
       </section>
-      <p>Continue to my <Link to="/webdev/" className={style.link}>WebDev</Link> page to learn more about my Frontend Web Developer skills.</p>
+      <p>Checkout the <Link to="/webdev/" className={style.link}>WebDev</Link> page to see my experience and projects.</p>
     </section>
     {/* PHOTOGRAPHY */}
     <section className={style.photography}>
@@ -39,6 +39,8 @@ const IndexPage = ({ data }) => (
         <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image}/>
         <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative3_khq0ii.jpg`} alt="Black and white spiral stairway" className={style.photography__image}/>
         <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative1_kxw9bv.jpg`} alt="Purple V shaped structure at night" className={style.photography__image}/>
+      </section>
+      <section className={style.photography__linkButton}>
         <Link className={style.photography__link} to="/photography/">
           <button className={style.photography__button}>See More →</button>
         </Link>
