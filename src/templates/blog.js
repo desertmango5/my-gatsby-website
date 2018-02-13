@@ -15,10 +15,10 @@ const Blog = ({ data }) => {
               <h2 className={style.title}>{post.node.title}</h2>
             </Link>
             {/* AUTHOR SECTION */}
-            <div key={post.node.authorInfo.id} className={style.authorSection}>
+            {/* <div key={post.node.authorInfo.id} className={style.authorSection}>
               <p className={style.author}>Posted by <span className={style.name}>{post.node.authorInfo.name}</span></p>
               <img src={post.node.authorInfo.photo.file.url} alt={post.node.authorInfo.name} className={style.authorImage} />
-            </div>
+            </div> */}
             <div className={style.main}>
               <img 
                 src={post.node.heroImage.file.url} 

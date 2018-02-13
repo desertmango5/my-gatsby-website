@@ -26,8 +26,8 @@
     "react-toggle-display": "^2.2.0",
     "shortid": "^2.2.8",
     "slash": "^1.0.0",
-    "typeface-merriweather": "0.0.54",
-    "typeface-raleway": "0.0.54"
+    "typeface-raleway": "0.0.54",
+    "typeface-titillium-web": "0.0.54"
   },
   "keywords": [
     "gatsby"

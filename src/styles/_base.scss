@@ -22,16 +22,16 @@ html {
 
 h1 {
   font: {
-    family: Merriweather, sans-serif;
+    family: 'Titillium Web', sans-serif;
     size: 3rem;
-    weight: 400;
+    weight: 600;
   }
   color: $heading-font-color;
 }
 
 h2 {
   font: {
-    family: Merriweather, sans-serif;
+    family: 'Titillium Web', sans-serif;
     size: 2.75rem;
   }
   margin: 6rem 0 2rem 0;
@@ -40,7 +40,7 @@ h2 {
 
 h3 {
   font: {
-    family: Merriweather, sans-serif;
+    family: 'Titillium Web', sans-serif;
     size: 2.5rem;
   }
   margin: 6rem 0 2rem 0;
@@ -49,7 +49,7 @@ h3 {
 
 h4 {
   font: {
-    family: Merriweather, sans-serif;
+    family: 'Titillium Web', sans-serif;
     size: 2rem;
     style: italic;
     weight: 400;
@@ -60,7 +60,7 @@ h4 {
 
 h5 {
   font: {
-    family: Merriweather, sans-serif;
+    family: 'Titillium Web', sans-serif;
     size: 1.5rem;
     weight: 300;
   }
@@ -69,13 +69,13 @@ h5 {
 
 p {
   font: {
-    size: 1.8rem;
-    weight: 300;
+    size: 1.6rem;
+    weight: 400;
   }
   margin: 1.4rem 0;
-  line-height: 2.55rem;
-  letter-spacing: 0.035rem;
-  color: $menu-font-color;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: #555;
 }
 
 pre {
@@ -93,9 +93,7 @@ code {
   line-height: 2rem;
   background: rgba(255,215,0,0.1);
   padding: 0.2rem 0.75rem;
-  border-radius: 3px;
   border: 0;
-  box-shadow: 1px 1px 1px #aaa;
   color: $heading-font-color;
 }
 
@@ -118,7 +116,7 @@ ul li {
   }
   margin: 1.4rem 0;
   line-height: 2.4rem;
-  color: $menu-font-color;
+  color: #555;
   list-style: disc;
   margin-left: 4rem;
 }
@@ -130,7 +128,7 @@ ol li {
   }
   margin: 1.4rem 0;
   line-height: 2.4rem;
-  color: $menu-font-color;
+  color: #555;
   list-style: decimal;
   margin-left: 4rem;
 }
@@ -149,4 +147,9 @@ em {
 
 strong {
   font-weight: 600;
+}
+
+a {
+  color: $menu-font-color;
+  text-decoration: underline;
 }
