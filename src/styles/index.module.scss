@@ -40,7 +40,7 @@
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .photography {
@@ -60,8 +60,6 @@
 
 .photography__image {
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #777;
 }
 
 .photography__link {
@@ -73,18 +71,22 @@
 .photography__button {
   width: 120px;
   padding: 1rem;
-  border-radius: 5px;
-  border: 0;
-  box-shadow: 1px 1px 4px #777;
+  border: 1px solid #ccc;
   background: rgba(0,0,0,0);
   font: {
     size: 1.3rem;
   }
 }
 
+.photography__linkButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .photography__button:hover {
   cursor: pointer;
-  background: rgba(85,107,47,0.1);
+  box-shadow: 1px 1px 3px #777;
 }
 
 .blog {
@@ -104,9 +106,10 @@
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
   font: {
-    size: 1.3rem;
+    size: 1.2rem;
   }
   margin: 0;
+  color: $date-color;
 }
 
 .blog__link {
@@ -118,6 +121,7 @@
 }
 
 .blog__title {
+  font-style: normal;
   margin-top: 0;
   margin-bottom: 1rem;
   color: $heading-font-color;
@@ -127,8 +131,6 @@
 
 .blog__image {
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #777;
 }
 
 .blog__hr {

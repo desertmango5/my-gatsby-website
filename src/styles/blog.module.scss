@@ -24,6 +24,7 @@
     size: 1.3rem;
   }
   margin: 0;
+  color: $date-color;
 }
 
 .link {
@@ -39,7 +40,7 @@
 
 .title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   color: $heading-font-color;
   font-size: 3.5rem;
   line-height: 4.5rem;
@@ -91,9 +92,7 @@
   grid-column: 1 / span 1;
   width: 120px;
   padding: 1rem;
-  border-radius: 5px;
-  border: 0;
-  box-shadow: 1px 1px 4px #777;
+  border: 1px solid #ccc;
   background: rgba(0,0,0,0);
   font: {
     size: 1.3rem;
@@ -105,15 +104,13 @@
 
 .button:hover {
   cursor: pointer;
-  background: rgba(85,107,47,0.1);
+  box-shadow: 1px 1px 3px #777;
 }
 
 .heroImage {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #777;
 }
   
 
