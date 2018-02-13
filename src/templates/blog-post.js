@@ -12,28 +12,37 @@ class BlogPost extends React.Component {
     const post = this.props.data.contentfulBlogPost
     const { next, prev } = this.props.pathContext
 
-    const createTitle = (slug) => {
+    const createTitlePrev = (slug) => {
+      let noBlog = slug.slice(6, prev.length)
+      let title = noBlog.replace(/-/g, ' ')
+      return title
+    }
+
+    const createTitleNext = (slug) => {
       let noBlog = slug.slice(6, next.length)
       let title = noBlog.replace(/-/g, ' ')
       return title
     }
 
-    const nextTitle = createTitle(next)
-    const prevTitle = createTitle(prev)
+    const nextTitle = createTitleNext(next)
+    const prevTitle = createTitlePrev(prev)
     
     return (
       <div>
-        <div className={style.body}>
-          <div key={post.id} className={style.post}>
+        <div className={style.body__aboveHero}>
+          <div key={post.id} className={style.post__aboveHero}>
             <p className={style.date}>{post.date}</p>
             <h2 className={style.title}>{post.title}</h2>
-            
+          </div>
+        </div>
+            <img 
+              src={post.heroImage.file.url} 
+              alt={post.title}
+              className={style.heroImage}  
+            />
+        <div className={style.body__belowHero}>
+          <div key={post.id} className={style.post}>
             <div className={style.main}>
-              <img 
-                src={post.heroImage.file.url} 
-                alt={post.title}
-                className={style.coverImage}  
-              />
               <Markdown
                 source={post.content.content}
                 className={style.content}
@@ -48,7 +57,7 @@ class BlogPost extends React.Component {
                 </div>
               <hr className={style.divider}/>
               <h5>Tags</h5>
-              <div className={style.tag}>
+              <div className={style.tags}>
                 {post.tag.map(tag => (
                   <button key={shortid.generate()} className={style.tags__button}>{tag}</button>
                 ))}

@@ -1,10 +1,12 @@
-# My Official Website - Footer Branch
+# My Official Website - Style Updated
 
 ### A [GatsbyJS](https://www.gatsbyjs.org/) website powered by [Contentful](https://contentful.com)
 
  
-This branch will be used to redesign my website footer.
+My website and blog were built with Gatsby and ReactJS. 
 
-Once I'm happy with the redesign, will make a pull request to development branch for testing.
+Contentful powers the blog.
+
+It is hosted on Netlify.
 
 
