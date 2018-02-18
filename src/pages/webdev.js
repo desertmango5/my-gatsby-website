@@ -151,9 +151,15 @@ const Webdev = () => (
     <h2>Projects</h2>
     <section className={style.projects}>
       <Project 
+        name="ESL Educational Video Sharing Site"
+        url="https://misskellysvideos.netlify.com/"
+        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, Contentful, JAM, Photoshop, CSSGrid, NPM, Netlify]}
+        desc="A real website for an ESL kindergarten teacher to share English videos with her students. Add new videos simply using Contentful CMS."
+      />
+      <Project 
         name="michaelmanges.com"
         url="https://www.michaelmanges.com"
-        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, Contentful, JAM, Photoshop, CSSGrid, NPM]}
+        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, Contentful, JAM, Photoshop, CSSGrid, NPM, Netlify]}
         desc="My professional website and blog."
       />
       <Project 
