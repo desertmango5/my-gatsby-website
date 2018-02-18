@@ -22,6 +22,8 @@ import Mongo from '../assets/icons/mongodb-logo.png'
 import Express from '../assets/icons/express-logo.png'
 import Pug from '../assets/icons/pug-logo.png'
 import SASS from '../assets/icons/sass-logo.png'
+import Contentful from '../assets/icons/contentful-logo.png'
+import Netlify from '../assets/icons/netlify-logo.png'
 
 const Webdev = () => (
   <div className={style.body}>
@@ -38,102 +40,112 @@ const Webdev = () => (
       <Experience 
         logo={JS}
         tool="JavaScript"
-        level="7"
+        level="Fluent"
       />
       <Experience 
         logo={ReactLogo}
         tool="React"
-        level="5"
+        level="Fluent"
       />
       <Experience 
         logo={ES6}
         tool="ES6"
-        level="7"
+        level="Fluent"
       />
       <Experience 
         logo={CSS3}
         tool="CSS3"
-        level="8"
+        level="Excellent"
       />
       <Experience 
         logo={GraphQLLogo}
         tool="GraphQL"
-        level="4"
+        level="Novice"
       />
       <Experience 
-        logo={GraphCMS}
-        tool="GraphCMS"
-        level="6"
+        logo={Contentful}
+        tool="Contentful"
+        level="Fluent"
       />
       <Experience 
         logo={HTMLLogo}
         tool="HTML"
-        level="8"
+        level="Excellent"
       />
       <Experience 
         logo={JAM}
         tool="JAMstack"
-        level="6"
+        level="Fluent"
       />
       <Experience 
         logo={NodeJS}
         tool="Node.js"
-        level="4"
+        level="Novice"
       />
       <Experience 
         logo={NPM}
         tool="NPM"
-        level="4"
+        level="Novice"
       />
       <Experience 
         logo={Photoshop}
         tool="Photoshop"
-        level="8"
+        level="Excellent"
       />
       <Experience 
         logo={Illustrator}
         tool="Illustrator"
-        level="6"
+        level="Fluent"
       />
       <Experience 
         logo={Vue}
         tool="Vue"
-        level="4"
+        level="Fluent"
       />
       <Experience 
         logo={Webpack}
         tool="Webpack"
-        level="5"
+        level="Fluent"
       />
       <Experience 
         logo={Gatsby}
         tool="Gatsby"
-        level="6"
+        level="Fluent"
       />
       <Experience 
         logo={CSSGrid}
         tool="CSS Grid"
-        level="6"
+        level="Fluent"
       />
       <Experience 
         logo={Mongo}
         tool="MongoDB"
-        level="4"
+        level="Novice"
       />
       <Experience 
         logo={Express}
         tool="ExpressJS"
-        level="5"
+        level="Fluent"
       />
       <Experience 
         logo={Pug}
         tool="Pug"
-        level="5"
+        level="Fluent"
       />
       <Experience 
         logo={SASS}
         tool="SASS"
-        level="7"
+        level="Fluent"
+      />
+      <Experience 
+        logo={Netlify}
+        tool="Netlify"
+        level="Fluent"
+      />
+      <Experience 
+        logo={GraphCMS}
+        tool="GraphCMS"
+        level="Fluent"
       />
     </section>
     <h2>Projects</h2>
@@ -141,7 +153,7 @@ const Webdev = () => (
       <Project 
         name="michaelmanges.com"
         url="https://www.michaelmanges.com"
-        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, GraphCMS, JAM, Photoshop, CSSGrid, NPM]}
+        logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, Contentful, JAM, Photoshop, CSSGrid, NPM]}
         desc="My professional website and blog."
       />
       <Project 
