@@ -16,14 +16,13 @@ const Photography = () => (
       <p>Individual • Couples • Families</p>
       <PortraitImages />
 
-      <h2>Business</h2>
-      <p>Make an Impression</p>
-      <BusinessImages />
-      
-
       <h2>Artistic</h2>
       <p>Some of My Favorite Work</p>
       <ArtisticImages />
+
+      <h2>Business</h2>
+      <p>Make an Impression</p>
+      <BusinessImages />
     </div>
   </div>
 
