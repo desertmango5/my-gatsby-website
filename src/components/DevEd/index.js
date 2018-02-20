@@ -67,6 +67,17 @@ class DevEd extends React.Component {
           <p>
             The more I learn, more I see that I have barely scratched the frontend development surface. I will continue to build new projects, read documentation, and experiment. At this point, I think that a job as a frontend developer would really fuel my learning and take my knowledge to the next level. 
           </p>
+          <br/>
+          <p><strong>Things I Plan To Learn</strong></p>
+          <p>
+            <ul>
+              <li>GraphQL</li>
+              <li>CSS Animations</li>
+              <li>Databases</li>
+              <li>Algolia Search</li>
+              <li>SVG Images</li>
+            </ul>
+          </p>
         </ToggleDisplay>
       </div>
     )
