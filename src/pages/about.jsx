@@ -1,6 +1,5 @@
 import React from 'react' 
 import style from '../styles/about.module.scss'
-import ToggleDisplay from 'react-toggle-display'
 import CulturalLessons from '../components/CulturalLessons/index';
 import ParentingLessons from '../components/ParentingLessons/index';
 import Adulting from '../components/Adulting'
