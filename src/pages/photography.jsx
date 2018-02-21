@@ -1,8 +1,8 @@
-import React from 'react' 
-import style from '../styles/photography.module.scss'
-import ArtisticImages from '../components/ArtisticImages'
-import BusinessImages from '../components/BusinessImages'
-import PortraitImages from '../components/PortraitImages'
+import React from 'react'; 
+import style from '../styles/photography.module.scss';
+import ArtisticImages from '../components/ArtisticImages';
+import BusinessImages from '../components/BusinessImages';
+import PortraitImages from '../components/PortraitImages';
 
 const Photography = () => (
   <div>
@@ -26,6 +26,6 @@ const Photography = () => (
     </div>
   </div>
 
-)
+);
 
-export default Photography
+export default Photography; 

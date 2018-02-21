@@ -1,29 +1,29 @@
-import React from 'react' 
-import style from '../styles/webdev.module.scss'
-import Experience from '../components/Experience'
-import Project from '../components/Project'
-import ReactLogo from '../assets/icons/react-logo.png'
-import JS from '../assets/icons/js-logo.png'
-import ES6 from '../assets/icons/es6-logo.png'
-import CSS3 from '../assets/icons/css-logo.png'
-import GraphQLLogo from '../assets/icons/graphql-logo.png'
-import GraphCMS from '../assets/icons/graphcms-logo.png'
-import HTMLLogo from '../assets/icons/html-logo.png'
-import JAM from '../assets/icons/jamstack-logo.png'
-import NodeJS from '../assets/icons/node-logo.png'
-import NPM from '../assets/icons/npm-logo.png'
-import Photoshop from '../assets/icons/photoshop-logo.png'
-import Illustrator from '../assets/icons/illustrator-logo.png'
-import Vue from '../assets/icons/vue-logo.png'
-import Webpack from '../assets/icons/webpack-logo.png'
-import Gatsby from '../assets/icons/gatsby-logo.png'
-import CSSGrid from '../assets/icons/css-grid-logo.png'
-import Mongo from '../assets/icons/mongodb-logo.png'
-import Express from '../assets/icons/express-logo.png'
-import Pug from '../assets/icons/pug-logo.png'
-import SASS from '../assets/icons/sass-logo.png'
-import Contentful from '../assets/icons/contentful-logo.png'
-import Netlify from '../assets/icons/netlify-logo.png'
+import React from 'react'; 
+import style from '../styles/webdev.module.scss';
+import Experience from '../components/Experience';
+import Project from '../components/Project';
+import ReactLogo from '../assets/icons/react-logo.png';
+import JS from '../assets/icons/js-logo.png';
+import ES6 from '../assets/icons/es6-logo.png';
+import CSS3 from '../assets/icons/css-logo.png';
+import GraphQLLogo from '../assets/icons/graphql-logo.png';
+import GraphCMS from '../assets/icons/graphcms-logo.png';
+import HTMLLogo from '../assets/icons/html-logo.png';
+import JAM from '../assets/icons/jamstack-logo.png';
+import NodeJS from '../assets/icons/node-logo.png';
+import NPM from '../assets/icons/npm-logo.png';
+import Photoshop from '../assets/icons/photoshop-logo.png';
+import Illustrator from '../assets/icons/illustrator-logo.png';
+import Vue from '../assets/icons/vue-logo.png';
+import Webpack from '../assets/icons/webpack-logo.png';
+import Gatsby from '../assets/icons/gatsby-logo.png';
+import CSSGrid from '../assets/icons/css-grid-logo.png';
+import Mongo from '../assets/icons/mongodb-logo.png';
+import Express from '../assets/icons/express-logo.png';
+import Pug from '../assets/icons/pug-logo.png';
+import SASS from '../assets/icons/sass-logo.png';
+import Contentful from '../assets/icons/contentful-logo.png';
+import Netlify from '../assets/icons/netlify-logo.png';
 
 const Webdev = () => (
   <div className={style.body}>
@@ -188,6 +188,7 @@ const Webdev = () => (
       />
     </section>
   </div>
-)
+); 
 
-export default Webdev
+export default Webdev;
+

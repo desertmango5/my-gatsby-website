@@ -1,13 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import 'typeface-raleway'
-import 'typeface-titillium-web'
-import style from '../styles/index.module.scss'
-import JAM from '../assets/icons/jamstack-logo.png'
-import ReactLogo from '../assets/icons/react-logo.png'
-import ES6 from '../assets/icons/es6-logo.png'
-import GraphQLLogo from '../assets/icons/graphql-logo.png'
-import Gatsby from '../assets/icons/gatsby-logo.png'
+import React from 'react';
+import Link from 'gatsby-link';
+import 'typeface-raleway';
+import 'typeface-titillium-web';
+import style from '../styles/index.module.scss';
+import JAM from '../assets/icons/jamstack-logo.png';
+import ReactLogo from '../assets/icons/react-logo.png';
+import ES6 from '../assets/icons/es6-logo.png';
+import GraphQLLogo from '../assets/icons/graphql-logo.png';
+import Gatsby from '../assets/icons/gatsby-logo.png';
 
 
 const IndexPage = ({ data }) => (
@@ -36,9 +36,9 @@ const IndexPage = ({ data }) => (
       <h3>Photography</h3>
       <p>What began as a hobby grew into much more when people began to notice my work. Even though professional photography is a part-time side gig, I am thankful to have a creative outlet.</p>
       <section className={style.photography__images}>
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image}/>
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative3_khq0ii.jpg`} alt="Black and white spiral stairway" className={style.photography__image}/>
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative1_kxw9bv.jpg`} alt="Purple V shaped structure at night" className={style.photography__image}/>
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image} />
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative3_khq0ii.jpg`} alt="Black and white spiral stairway" className={style.photography__image} />
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative1_kxw9bv.jpg`} alt="Purple V shaped structure at night" className={style.photography__image} />
       </section>
       <section className={style.photography__linkButton}>
         <Link className={style.photography__link} to="/photography/">
@@ -65,9 +65,9 @@ const IndexPage = ({ data }) => (
         ))}
     </section>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const lastThreePosts = graphql`
   query LastThree {
@@ -91,4 +91,4 @@ export const lastThreePosts = graphql`
       }
     }
   }
-`
+`;

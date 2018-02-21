@@ -41,7 +41,7 @@ class DevEd extends React.Component {
           <br/>
           <p><strong>My Learning Path</strong></p>
           <p>
-            I didn't begin studyings as a total <em>noob</em>. Back in 2013 I managed to hand-code a photography portfolio site. It was a single page responsive site that was all of 3 files: 1 HTML file, 1 CSS file, and 1 JavaScript file. I was very proud of that site; for two years it was probably my best photography saleman. But that was several years ago...
+            I didn't begin studying as a total <em>noob</em>. Back in 2013 I managed to hand-code a photography portfolio site. It was a single page responsive site that was all of 3 files: 1 HTML file, 1 CSS file, and 1 JavaScript file. I was very proud of that site; for two years it was probably my best photography saleman. But that was several years ago...
           </p>
           <p>
             I began where so many begin. FreeCodeCamp. Codecademy. Udacity. I followed along with the training videos and did the projects. I found them all useful for introducing a foundation of coding knowledge. When my family went home last summer, I stayed behind for a month to focus on the JavaScript section in FreeCodeCamp. That was a rough month. I was away from my family for the first time and I was struggling through arrays, objects, and functions. But it was time well spent.
