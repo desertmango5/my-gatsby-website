@@ -1,16 +1,16 @@
 const path = require('path');
-const slash = require('slash');
+const slash = require('slash'); 
 const {
   createPaginationPages,
   createLinkedPages,
-  prefixPathFormatter
+  prefixPathFormatter,
 } = require('gatsby-pagination');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  const { createPage } = boundActionCreators;
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve(`src/templates/blog-post.jsx`)
-    const blogTemplate = path.resolve(`src/templates/blog.jsx`)
+    const postTemplate = path.resolve(`src/templates/blog-post.jsx`);
+    const blogTemplate = path.resolve(`src/templates/blog.jsx`);
 
     graphql(`
       {
@@ -45,9 +45,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `).then(result => {
-        if(result.errors) {
-          console.log(result.errors)
+    `).then((result) => {
+        if (result.errors) {
+          console.error(result.errors);
         }
 
         // create blog.js page that passes pathContext props to blog-post.js
@@ -56,8 +56,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.allContentfulBlogPost.edges,
           component: slash(blogTemplate),
           pathFormatter: prefixPathFormatter("/blog"),
-          limit: 10
-        })
+          limit: 10,
+        });
 
         // create page for each blog post when title is clicked
         createLinkedPages({
@@ -71,8 +71,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           }),
           circular: true,
-        })
-      resolve()
-    })
-  })
-}
+        });
+      resolve();
+    });
+  });
+};

@@ -36,9 +36,9 @@ const IndexPage = ({ data }) => (
       <h3>Photography</h3>
       <p>What began as a hobby grew into much more when people began to notice my work. Even though professional photography is a part-time side gig, I am thankful to have a creative outlet.</p>
       <section className={style.photography__images}>
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image} />
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative3_khq0ii.jpg`} alt="Black and white spiral stairway" className={style.photography__image} />
-        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/v1517768592/creative1_kxw9bv.jpg`} alt="Purple V shaped structure at night" className={style.photography__image} />
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/q_auto:best/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image} />
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/q_auto:best/v1517768592/creative3_khq0ii.jpg`} alt="Black and white spiral stairway" className={style.photography__image} />
+        <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/q_auto:best/v1517768592/creative1_kxw9bv.jpg`} alt="Purple V shaped structure at night" className={style.photography__image} />
       </section>
       <section className={style.photography__linkButton}>
         <Link className={style.photography__link} to="/photography/">
