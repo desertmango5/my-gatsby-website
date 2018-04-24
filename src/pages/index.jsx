@@ -3,7 +3,8 @@ import Link from 'gatsby-link';
 import 'typeface-raleway';
 import 'typeface-titillium-web';
 import style from '../styles/index.module.scss';
-import JAM from '../assets/icons/jamstack-logo.png';
+import HTML from '../assets/icons/html-logo.png';
+import CSS from '../assets/icons/css-logo.png';
 import ReactLogo from '../assets/icons/react-logo.png';
 import ES6 from '../assets/icons/es6-logo.png';
 import GraphQLLogo from '../assets/icons/graphql-logo.png';
@@ -13,10 +14,10 @@ import Gatsby from '../assets/icons/gatsby-logo.png';
 const IndexPage = ({ data }) => (
   <div className={style.body}>
     <section className={style.intro}>
-      <h1>Frontend Developer at &lt;<em>Future Company</em>&gt;</h1>
+      <h1>React Frontend Developer</h1>
       <p>
-        I am actively looking for my first full-time Frontend Developer position in my hometown Phoenix, AZ, USA or certain locations in Europe. My ideal company embraces modern web development tools and has a nurturing culture where I can continue learning.
-      </p>
+        I am activily seeking a junior/entry level React Frontend Developer position in the Phoenix, Arizona, USA area. 
+      </p> 
     </section>
     {/* FRONTEND */}
     <section className={style.frontend}>
@@ -25,15 +26,16 @@ const IndexPage = ({ data }) => (
       <section className={style.frontend__logos}>
         <img src={ReactLogo} alt="React logo" className={style.frontend__logo} />
         <img src={ES6} alt="ES6 logo" className={style.frontend__logo} />
+        <img src={HTML} alt="HTML logo" className={style.frontend__logo} />
+        <img src={CSS} alt="CSS logo" className={style.frontend__logo} />
         <img src={GraphQLLogo} alt="GraphQL logo" className={style.frontend__logo} />
         <img src={Gatsby} alt="Gatsby logo" className={style.frontend__logo} />
-        <img src={JAM} alt="JAMstack" className={style.frontend__logo} />
       </section>
       <p>Checkout the <Link to="/webdev/" className={style.link}>WebDev</Link> page to see my experience and projects.</p>
     </section>
     {/* PHOTOGRAPHY */}
     <section className={style.photography}>
-      <h3>Photography</h3>
+      <h3>Professional Photography</h3>
       <p>What began as a hobby grew into much more when people began to notice my work. Even though professional photography is a part-time side gig, I am thankful to have a creative outlet.</p>
       <section className={style.photography__images}>
         <img src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUD_NAME}/image/upload/q_auto:best/v1517768591/creative2_rowt9l.jpg`} alt="Fish pier at night" className={style.photography__image} />

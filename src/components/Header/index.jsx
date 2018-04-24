@@ -1,24 +1,24 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import { NavLink } from 'react-router-dom'
-import ToggleDisplay from 'react-toggle-display'
-import classNames from 'classnames/bind'
-import style from './index.module.scss'
-import logo from '../../assets/logo/website-logo.png'
-import hamburger from '../../assets/icons/hamburger.png'
+import React from 'react';
+import Link from 'gatsby-link';
+import { NavLink } from 'react-router-dom';
+import ToggleDisplay from 'react-toggle-display';
+import classNames from 'classnames/bind';
+import style from './index.module.scss';
+import logo from '../../assets/logo/website-logo.png';
+import hamburger from '../../assets/icons/hamburger.png';
 
 class Header extends React.Component {
   constructor() {
-    super()
-    this.state = { show: false }
+    super();
+    this.state = { show: false };
   }
 
   handleClick() {
-    this.setState({ show: !this.state.show })
+    this.setState({ show: !this.state.show });
   }
 
   closeMenu() {
-    this.setState({ show: false })
+    this.setState({ show: false });
   }
 
   render() {
@@ -28,17 +28,17 @@ class Header extends React.Component {
           <Link 
             to="/" 
             className={style.title__link}
-            onClick={ () => this.closeMenu() }
-            >
-              <img src={logo} alt="Michael Manges logo" className={style.title} />
-            </Link>
+            onClick={() => this.closeMenu()}
+          >
+            <img src={logo} alt="Michael Manges logo" className={style.title} />
+          </Link>
           <h4 className={style.byline}>{this.props.byline}</h4>
         </div>
         <nav className={style.menu}>
           
           <nav className={style.mobile}>
             <button 
-              onClick={ () => this.handleClick() } 
+              onClick={() => this.handleClick()} 
               className={style.mobile__button}
             >
               
@@ -89,7 +89,7 @@ class Header extends React.Component {
             to="/webdev/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.closeMenu() }
+            onClick={() => this.closeMenu()}
           >
               WebDev
           </NavLink>
@@ -97,7 +97,7 @@ class Header extends React.Component {
             to="/blog/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.closeMenu() }
+            onClick={() => this.closeMenu()}
           >
             Blog
           </NavLink>
@@ -105,7 +105,7 @@ class Header extends React.Component {
             to="/about/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.closeMenu() }
+            onClick={() => this.closeMenu()}
           >
             About
           </NavLink>
@@ -113,17 +113,16 @@ class Header extends React.Component {
             to="/photography/" 
             className={style.mobile__item}
             activeClassName={style.menu__active}
-            onClick={ () => this.closeMenu() }
+            onClick={() => this.closeMenu()}
           >
             Photography
           </NavLink>
         </ToggleDisplay>
 
       </div>
-    )
+    );
   }
 } 
 
 
-
-export default Header
+export default Header;
