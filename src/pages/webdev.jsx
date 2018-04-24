@@ -151,6 +151,12 @@ const Webdev = () => (
     <h2>Projects</h2>
     <section className={style.projects}>
       <Project 
+        name="React Calculator"
+        url="https://react-calc-d042018.netlify.com/"
+        logos={[ReactLogo, JS, ES6, CSS3, Photoshop, NPM, Netlify]}
+        desc="A working calculator built using React. Includes button animation, keyboard input, pop up shortcut menu, and designed after an 'old school' calculator. This was NOT a tutorial project; everything is bespoke."
+      />
+      <Project 
         name="ESL Educational Video Sharing Site"
         url="https://misskellysvideos.netlify.com/"
         logos={[JS, ReactLogo, SASS, ES6, Gatsby, CSS3, GraphQLLogo, Contentful, JAM, Photoshop, NPM, Netlify]}
